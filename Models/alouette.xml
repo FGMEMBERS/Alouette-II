@@ -1,0 +1,310 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>alouette.ac</path>
+  <offsets>
+    <x-m> 0.000 </x-m>
+    <y-m> 0.000 </y-m>
+    <z-m> 0.000 </z-m>
+    <roll-deg>    0.000 </roll-deg>
+    <pitch-deg>   0.000 </pitch-deg>
+    <heading-deg> 0.000 </heading-deg>
+  </offsets>
+
+  <animation>
+    <object-name>fuselage</object-name>
+    <object-name>tourvitre</object-name>
+    <object-name>structure</object-name>
+    <object-name>reservoir</object-name>
+    <object-name>moteur</object-name>
+    <object-name>sieges</object-name>
+    <object-name>panel</object-name>
+    <object-name>pilote</object-name>
+    <object-name>ailerons</object-name>
+    <object-name>cache</object-name>
+    <object-name>porteG</object-name>
+    <object-name>porteD</object-name>
+    <object-name>souflets</object-name>
+    <object-name>mancheG</object-name>
+    <object-name>mancheD</object-name>
+    <object-name>paloGG</object-name>
+    <object-name>paloGD</object-name>
+    <object-name>paloDG</object-name>
+    <object-name>paloDD</object-name>
+
+    <object-name>roueG</object-name>
+    <object-name>roueD</object-name>
+    <object-name>patins</object-name>
+
+    <!-- Transparence -->
+    <object-name>vitre</object-name>
+    <object-name>vitreporteG</object-name>
+    <object-name>vitreporteD</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitre</object-name>
+    <object-name>vitreporteG</object-name>
+    <object-name>vitreporteD</object-name>
+  </animation>
+
+  <!-- Tableau de bord -->
+  <model>
+    <path>Aircraft/Alouette-II/Models/Panel/panel.xml</path>
+    <offsets>
+      <x-m> -4.136 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.344 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Rotor principale -->
+  <model>
+    <path>Aircraft/Alouette-II/Models/MainRotor/mainrotor.xml</path>
+    <offsets>
+      <x-m> -2.142 </x-m>
+      <y-m>  0.014 </y-m>
+      <z-m>  0.177 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Rotor de queue -->
+  <model>
+    <path>Aircraft/Alouette-II/Models/TailRotor/tailrotor.xml</path>
+    <offsets>
+      <x-m>  3.963 </x-m>
+      <y-m>  0.226 </y-m>
+      <z-m>  0.174 </z-m>
+      <roll-deg>  -90.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Pilote invisible depuis le cockpit -->
+  <animation>
+    <type>select</type>
+    <object-name>pilote</object-name>
+    <condition>
+      <greater-than>
+        <property>sim/current-view/view-number</property>
+        <value>0</value>
+      </greater-than>
+    </condition>
+  </animation>
+
+  <!-- Compresssion -->
+  <animation>
+    <type>translate</type>
+    <object-name>roueG</object-name>
+    <property>gear/gear[1]/compression-m</property>
+    <factor> 0.3 </factor>
+    <axis>
+      <x> 0.000 </x>
+      <y> 0.000 </y>
+      <z> 1.000 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>roueD</object-name>
+    <property>gear/gear[2]/compression-m</property>
+    <factor> 0.3 </factor>
+    <axis>
+      <x> 0.000 </x>
+      <y> 0.000 </y>
+      <z> 1.000 </z>
+    </axis>
+  </animation>
+
+  <!-- Porte passager -->
+  <animation>
+    <type>rotate</type>
+    <object-name>porteG</object-name>
+    <object-name>vitreporteG</object-name>
+    <property>instrumentation/doors/passenger/position-norm</property>
+    <factor> -175.0 </factor>
+    <center>
+      <x-m> -4.215 </x-m>
+      <y-m> -0.819 </y-m>
+      <z-m> -0.438 </z-m>
+    </center>
+    <axis>
+      <x> 0.000 </x>
+      <y> 0.000 </y>
+      <z> 1.000 </z>
+    </axis>
+  </animation>
+
+  <!-- Porte pilote -->
+  <animation>
+    <type>rotate</type>
+    <object-name>porteD</object-name>
+    <object-name>vitreporteD</object-name>
+    <property>instrumentation/doors/crew/position-norm</property>
+    <factor> 175.0 </factor>
+    <center>
+      <x-m> -4.215 </x-m>
+      <y-m>  0.819 </y-m>
+      <z-m> -0.438 </z-m>
+    </center>
+    <axis>
+      <x> 0.000 </x>
+      <y> 0.000 </y>
+      <z> 1.000 </z>
+    </axis>
+  </animation>
+
+  <!-- Palonnier -->
+  <!-- Pilote -->
+  <animation>
+    <type>rotate</type>
+    <object-name>paloDG</object-name>
+    <property>controls/flight/rudder</property>
+    <factor>10</factor>
+    <center>
+      <x-m> -4.463 </x-m>
+      <y-m>  0.439 </y-m>
+      <z-m> -0.834 </z-m>
+    </center>
+    <axis>
+      <x> 0.000 </x>
+      <y> 1.000 </y>
+      <z> 0.000 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>paloDD</object-name>
+    <property>controls/flight/rudder</property>
+    <factor>-10</factor>
+    <center>
+      <x-m> -4.463 </x-m>
+      <y-m>  0.338 </y-m>
+      <z-m> -0.834 </z-m>
+    </center>
+    <axis>
+      <x> 0.000 </x>
+      <y> 1.000 </y>
+      <z> 0.000 </z>
+    </axis>
+  </animation>
+
+  <!-- Copilote -->
+  <animation>
+    <type>rotate</type>
+    <object-name>paloGG</object-name>
+    <property>controls/flight/rudder</property>
+    <factor>10</factor>
+    <center>
+      <x-m> -4.463 </x-m>
+      <y-m> -0.338 </y-m>
+      <z-m> -0.834 </z-m>
+    </center>
+    <axis>
+      <x> 0.000 </x>
+      <y> 1.000 </y>
+      <z> 0.000 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>paloGD</object-name>
+    <property>controls/flight/rudder</property>
+    <factor>-10</factor>
+    <center>
+      <x-m> -4.463 </x-m>
+      <y-m> -0.439 </y-m>
+      <z-m> -0.834 </z-m>
+    </center>
+    <axis>
+      <x> 0.000 </x>
+      <y> 1.000 </y>
+      <z> 0.000 </z>
+    </axis>
+  </animation>
+
+  <!-- Manches -->
+  <!-- Pilote -->
+  <animation>
+    <type>rotate</type>
+    <object-name>mancheD</object-name>
+    <property>controls/flight/elevator</property>
+    <factor>-10</factor>
+    <center>
+      <x-m> -4.318 </x-m>
+      <y-m>  0.388 </y-m>
+      <z-m> -0.804 </z-m>
+    </center>
+    <axis>
+      <x> 0.000 </x>
+      <y> 1.000 </y>
+      <z> 0.000 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>mancheD</object-name>
+    <property>controls/flight/aileron</property>
+    <factor>-10</factor>
+    <center>
+      <x-m> -4.318 </x-m>
+      <y-m>  0.388 </y-m>
+      <z-m> -0.804 </z-m>
+    </center>
+    <axis>
+      <x> 1.000 </x>
+      <y> 0.000 </y>
+      <z> 0.000 </z>
+    </axis>
+  </animation>
+
+  <!-- Copilote -->
+  <animation>
+    <type>rotate</type>
+    <object-name>mancheG</object-name>
+    <property>controls/flight/elevator</property>
+    <factor>-10</factor>
+    <center>
+      <x-m> -4.318 </x-m>
+      <y-m> -0.388 </y-m>
+      <z-m> -0.804 </z-m>
+    </center>
+    <axis>
+      <x> 0.000 </x>
+      <y> 1.000 </y>
+      <z> 0.000 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>mancheG</object-name>
+    <property>controls/flight/aileron</property>
+    <factor>-10</factor>
+    <center>
+      <x-m> -4.318 </x-m>
+      <y-m> -0.388 </y-m>
+      <z-m> -0.804 </z-m>
+    </center>
+    <axis>
+      <x> 1.000 </x>
+      <y> 0.000 </y>
+      <z> 0.000 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
+
