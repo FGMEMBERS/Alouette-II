@@ -19,7 +19,6 @@
     <object-name>reservoir</object-name>
     <object-name>moteur</object-name>
     <object-name>sieges</object-name>
-    <object-name>panel</object-name>
     <object-name>pilote</object-name>
     <object-name>ailerons</object-name>
     <object-name>cache</object-name>
@@ -94,7 +93,7 @@
     <object-name>pilote</object-name>
     <condition>
       <greater-than>
-        <property>sim/current-view/view-number</property>
+        <property>/sim/current-view/view-number</property>
         <value>0</value>
       </greater-than>
     </condition>
@@ -105,7 +104,7 @@
     <type>rotate</type>
     <object-name>porteG</object-name>
     <object-name>vitreporteG</object-name>
-    <property>instrumentation/doors/passenger/position-norm</property>
+    <property>/instrumentation/doors/passenger/position-norm</property>
     <factor> -175.0 </factor>
     <center>
       <x-m> -4.215 </x-m>
@@ -124,7 +123,7 @@
     <type>rotate</type>
     <object-name>porteD</object-name>
     <object-name>vitreporteD</object-name>
-    <property>instrumentation/doors/crew/position-norm</property>
+    <property>/instrumentation/doors/crew/position-norm</property>
     <factor> 175.0 </factor>
     <center>
       <x-m> -4.215 </x-m>
@@ -143,7 +142,7 @@
   <animation>
     <type>rotate</type>
     <object-name>paloDG</object-name>
-    <property>controls/flight/rudder</property>
+    <property>/controls/flight/rudder</property>
     <factor>10</factor>
     <center>
       <x-m> -4.463 </x-m>
@@ -160,7 +159,7 @@
   <animation>
     <type>rotate</type>
     <object-name>paloDD</object-name>
-    <property>controls/flight/rudder</property>
+    <property>/controls/flight/rudder</property>
     <factor>-10</factor>
     <center>
       <x-m> -4.463 </x-m>
@@ -178,7 +177,7 @@
   <animation>
     <type>rotate</type>
     <object-name>paloGG</object-name>
-    <property>controls/flight/rudder</property>
+    <property>/controls/flight/rudder</property>
     <factor>10</factor>
     <center>
       <x-m> -4.463 </x-m>
@@ -195,7 +194,7 @@
   <animation>
     <type>rotate</type>
     <object-name>paloGD</object-name>
-    <property>controls/flight/rudder</property>
+    <property>/controls/flight/rudder</property>
     <factor>-10</factor>
     <center>
       <x-m> -4.463 </x-m>
@@ -214,7 +213,7 @@
   <animation>
     <type>rotate</type>
     <object-name>mancheD</object-name>
-    <property>controls/flight/elevator</property>
+    <property>/controls/flight/elevator</property>
     <factor>-10</factor>
     <center>
       <x-m> -4.318 </x-m>
@@ -231,7 +230,7 @@
   <animation>
     <type>rotate</type>
     <object-name>mancheD</object-name>
-    <property>controls/flight/aileron</property>
+    <property>/controls/flight/aileron</property>
     <factor>-10</factor>
     <center>
       <x-m> -4.318 </x-m>
@@ -249,7 +248,7 @@
   <animation>
     <type>rotate</type>
     <object-name>mancheG</object-name>
-    <property>controls/flight/elevator</property>
+    <property>/controls/flight/elevator</property>
     <factor>-10</factor>
     <center>
       <x-m> -4.318 </x-m>
@@ -266,7 +265,7 @@
   <animation>
     <type>rotate</type>
     <object-name>mancheG</object-name>
-    <property>controls/flight/aileron</property>
+    <property>/controls/flight/aileron</property>
     <factor>-10</factor>
     <center>
       <x-m> -4.318 </x-m>

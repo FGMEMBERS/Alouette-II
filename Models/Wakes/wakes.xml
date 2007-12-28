@@ -48,9 +48,9 @@
   <submodel>
     <name>wake</name>
     <model>Aircraft/Super-Frelon/Models/Wakes/wake.ac</model>
-    <trigger>gear/gear[3]/wow</trigger>
-    <trigger>gear/gear[4]/wow</trigger>
-    <trigger>gear/gear[5]/wow</trigger>
+    <trigger>/gear/gear[3]/wow</trigger>
+    <trigger>/gear/gear[4]/wow</trigger>
+    <trigger>/gear/gear[5]/wow</trigger>
     <speed>0</speed>
     <repeat>true</repeat>
     <delay>0.5</delay>
