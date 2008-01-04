@@ -38,7 +38,7 @@
        incidence-stall-zero-speed="18" incidence-stall-half-sonic-speed="9" 
        lift-factor-stall="0.18" drag-factor-stall="8.0" stall-change-over="5.5" 
        cyclic-factor="1.0" 
-       rotor-correction-factor="0.65" 
+       rotor-correction-factor="0.75" 
        downwashfactor ="0.3" 
        balance="0.99985">
        <control-input axis="/controls/flight/aileron-trim" control="CYCLICAIL" split="true"/>
@@ -52,7 +52,7 @@
        x="-3.963" y="-0.226" z="0.174"
        nx="0.07" ny="1" nz="-0.05" 
        fx="1" fy="0" fz="0" ccw="0"
-       maxcollective="15" mincollective="-5" 
+       maxcollective="17.5" mincollective="-5" 
        diameter="1.817" numblades="2" 
        chord="0.17" phi0="115"
        weightperblade="5" relbladecenter="0.7"
@@ -62,7 +62,7 @@
        lift-factor-stall="0.18" drag-factor-stall="8.0" stall-change-over="5.5" 
        notorque="0" taper="1" number-of-segments="5" number-of-parts="4" rel-len-blade-start="0.33"
        downwashfactor ="0.3" 
-       rotor-correction-factor="0.9">
+       rotor-correction-factor="1">
        <control-input axis="/controls/flight/rudder" control="COLLECTIVE" src0="-1.0" src1="1.0" dst0="-1.0" dst1="1.0"/>
 </rotor>
 
