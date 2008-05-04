@@ -50,7 +50,7 @@
   <animation>
     <type>rotate</type>
     <object-name>ensemble3</object-name>
-    <property>/rotors/main/cone4-deg</property>
+    <property>rotors/main/cone4-deg</property>
     <factor> -1 </factor>
     <center>
        <x-m>  3.200 </x-m>
@@ -68,7 +68,7 @@
   <animation>
     <type>rotate</type>
     <object-name>ensemble4</object-name>
-    <property>/rotors/main/cone3-deg</property>
+    <property>rotors/main/cone3-deg</property>
     <factor> -1 </factor>
     <center>
        <x-m>  2.340 </x-m>
@@ -86,7 +86,7 @@
   <animation>
     <type>rotate</type>
     <object-name>ensemble5</object-name>
-    <property>/rotors/main/cone2-deg</property>
+    <property>rotors/main/cone2-deg</property>
     <factor> -1 </factor>
     <center>
        <x-m>  1.480 </x-m>
@@ -104,7 +104,7 @@
   <animation>
     <type>rotate</type>
     <object-name>ensemble6</object-name>
-    <property>/rotors/main/cone1-deg</property>
+    <property>rotors/main/cone1-deg</property>
     <factor> -1 </factor>
     <center>
        <x-m> 0.000 </x-m>
@@ -122,7 +122,7 @@
   <animation>
     <type>rotate</type>
     <object-name>ensemble6</object-name>
-    <property>/rotors/main/blade[1]/incidence-deg</property>
+    <property>rotors/main/blade[1]/incidence-deg</property>
     <factor>-1</factor>
     <center>
        <x-m> 0.000 </x-m>

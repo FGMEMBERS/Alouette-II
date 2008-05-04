@@ -24,7 +24,7 @@
     <object-name>propdisc</object-name>
     <condition>
       <greater-than>
-        <property>/rotors/tail/rpm</property>
+        <property>rotors/tail/rpm</property>
         <value>150</value>
       </greater-than>
     </condition>
@@ -36,11 +36,11 @@
     <condition>
       <and>
         <greater-than>
-          <property>/rotors/tail/rpm</property>
+          <property>rotors/tail/rpm</property>
           <value>60</value>
         </greater-than>
         <less-than>
-          <property>/rotors/tail/rpm</property>
+          <property>rotors/tail/rpm</property>
           <value>150.001</value>
         </less-than>
       </and>
@@ -52,7 +52,7 @@
     <object-name>blade</object-name>
     <condition>
       <less-than>
-        <property>/rotors/tail/rpm</property>
+        <property>rotors/tail/rpm</property>
 	<value>150</value>
       </less-than>
     </condition>
@@ -62,7 +62,7 @@
   <animation>
     <type>rotate</type>
     <object-name>blade</object-name>
-    <property>/rotors/tail/blade/incidence-deg</property>
+    <property>rotors/tail/blade/incidence-deg</property>
     <center>
        <x-m> 0.000 </x-m>
        <y-m> 0.000 </y-m>
