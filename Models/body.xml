@@ -1,0 +1,201 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>alouette.ac</path>
+
+  <nasal>
+    <load>
+      var livery_update = aircraft.livery_update.new("Aircraft/Alouette-II/Models/Liveries", 10);
+    </load>
+    <unload>
+      livery_update.stop();
+    </unload>
+  </nasal>
+
+  <animation>
+    <object-name>fuselage</object-name>
+    <object-name>tourvitre</object-name>
+    <object-name>structure</object-name>
+    <object-name>reservoir</object-name>
+    <object-name>moteur</object-name>
+    <object-name>ailerons</object-name>
+    <object-name>cache</object-name>
+    <object-name>porteG</object-name>
+    <object-name>porteD</object-name>
+
+    <!-- Transparence -->
+    <object-name>verriere</object-name>
+    <object-name>vitreporteG</object-name>
+    <object-name>vitreporteD</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>verriere</object-name>
+    <object-name>vitreporteG</object-name>
+    <object-name>vitreporteD</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>fuselage</object-name>
+    <object-name>tourvitre</object-name>
+    <object-name>structure</object-name>
+    <object-name>reservoir</object-name>
+    <object-name>moteur</object-name>
+    <object-name>ailerons</object-name>
+    <object-name>cache</object-name>
+    <object-name>porteG</object-name>
+    <object-name>porteD</object-name>
+
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>texture.png</texture>
+<!--
+    <diffuse>
+      <red-prop>diffuse/red</red-prop>
+      <green-prop>diffuse/green</green-prop>
+      <blue-prop>diffuse/blue</blue-prop>
+    </diffuse>
+
+    <ambient>
+      <red-prop>ambient/red</red-prop>
+      <green-prop>ambient/green</green-prop>
+      <blue-prop>ambient/blue</blue-prop>
+    </ambient>
+-->
+    <specular>
+      <red-prop>specular/red</red-prop>
+      <green-prop>specular/green</green-prop>
+      <blue-prop>specular/blue</blue-prop>
+    </specular>
+
+    <emission>
+      <red-prop>emission/red</red-prop>
+      <green-prop>emission/green</green-prop>
+      <blue-prop>emission/blue</blue-prop>
+    </emission>
+<!--
+    <shininess>
+      <shininess-prop>shininess</shininess-prop>
+    </shininess>
+-->
+  </animation>
+
+  <!-- Interieur -->
+  <model>
+    <path>Aircraft/Alouette-II/Models/Interior/interior.xml</path>
+    <offsets>
+      <x-m> 0.0 </x-m>
+      <y-m> 0.0 </y-m>
+      <z-m> 0.0 </z-m>
+      <roll-deg>    0.0 </roll-deg>
+      <pitch-deg>   0.0 </pitch-deg>
+      <heading-deg> 0.0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Rotor principale -->
+  <model>
+    <path>Aircraft/Alouette-II/Models/MainRotor/mainrotor.xml</path>
+    <offsets>
+      <x-m> -2.142 </x-m>
+      <y-m>  0.014 </y-m>
+      <z-m>  0.177 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Rotor de queue -->
+  <model>
+    <path>Aircraft/Alouette-II/Models/TailRotor/tailrotor.xml</path>
+    <offsets>
+      <x-m>  3.963 </x-m>
+      <y-m>  0.226 </y-m>
+      <z-m>  0.174 </z-m>
+      <roll-deg>  -90.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Porte passager -->
+  <animation>
+    <type>rotate</type>
+    <object-name>porteG</object-name>
+    <object-name>vitreporteG</object-name>
+    <property>/instrumentation/doors/passenger/position-norm</property>
+    <factor> -175.0 </factor>
+    <center>
+      <x-m> -4.215 </x-m>
+      <y-m> -0.819 </y-m>
+      <z-m> -0.438 </z-m>
+    </center>
+    <axis>
+      <x> 0.000 </x>
+      <y> 0.000 </y>
+      <z> 1.000 </z>
+    </axis>
+  </animation>
+
+  <!-- Porte pilote -->
+  <animation>
+    <type>rotate</type>
+    <object-name>porteD</object-name>
+    <object-name>vitreporteD</object-name>
+    <property>/instrumentation/doors/crew/position-norm</property>
+    <factor> 175.0 </factor>
+    <center>
+      <x-m> -4.215 </x-m>
+      <y-m>  0.819 </y-m>
+      <z-m> -0.438 </z-m>
+    </center>
+    <axis>
+      <x> 0.000 </x>
+      <y> 0.000 </y>
+      <z> 1.000 </z>
+    </axis>
+  </animation>
+
+  <!-- Essais d'ajout des effets lumineux d'après le G115 -->
+  <model>
+    <path>Aircraft/Alouette-II/Models/lights/beacon.xml</path>
+    <offsets>
+      <x-m> -3.112 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.494 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Alouette-II/Models/lights/RedLight.xml</path>
+    <offsets>
+      <x-m> -4.396 </x-m>
+      <y-m> -0.745 </y-m>
+      <z-m> -0.959 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Alouette-II/Models/lights/GreenLight.xml</path>
+    <offsets>
+      <x-m> -4.396 </x-m>
+      <y-m>  0.745 </y-m>
+      <z-m> -0.959 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Alouette-II/Models/lights/WhiteLight.xml</path>
+    <offsets>
+      <x-m>  3.963 </x-m>
+      <y-m> -0.200 </y-m>
+      <z-m>  0.174 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>
+

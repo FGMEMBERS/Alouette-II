@@ -1,0 +1,192 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>interior.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>interieur</object-name>
+    <object-name>sieges</object-name>
+    <object-name>souflets</object-name>
+    <object-name>mancheG</object-name>
+    <object-name>mancheD</object-name>
+    <object-name>paloGG</object-name>
+    <object-name>paloGD</object-name>
+    <object-name>paloDG</object-name>
+    <object-name>paloDD</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- Tableau de bord -->
+  <model>
+    <path>Aircraft/Alouette-II/Models/Interior/Panel/panel.xml</path>
+    <offsets>
+      <x-m> -4.136 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.344 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Pilote -->
+  <model>
+    <name>Pilote</name>
+    <path>Aircraft/Alouette-II/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -3.937 </x-m>
+      <y-m>  0.392 </y-m>
+      <z-m> -0.452 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg>   0.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Palonnier -->
+  <!-- Pilote -->
+  <animation>
+    <type>rotate</type>
+    <object-name>paloDG</object-name>
+    <property>/controls/flight/rudder</property>
+    <factor>10</factor>
+    <center>
+      <x-m> -4.463 </x-m>
+      <y-m>  0.439 </y-m>
+      <z-m> -0.834 </z-m>
+    </center>
+    <axis>
+      <x> 0.000 </x>
+      <y> 1.000 </y>
+      <z> 0.000 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>paloDD</object-name>
+    <property>/controls/flight/rudder</property>
+    <factor>-10</factor>
+    <center>
+      <x-m> -4.463 </x-m>
+      <y-m>  0.338 </y-m>
+      <z-m> -0.834 </z-m>
+    </center>
+    <axis>
+      <x> 0.000 </x>
+      <y> 1.000 </y>
+      <z> 0.000 </z>
+    </axis>
+  </animation>
+
+  <!-- Copilote -->
+  <animation>
+    <type>rotate</type>
+    <object-name>paloGG</object-name>
+    <property>/controls/flight/rudder</property>
+    <factor>10</factor>
+    <center>
+      <x-m> -4.463 </x-m>
+      <y-m> -0.338 </y-m>
+      <z-m> -0.834 </z-m>
+    </center>
+    <axis>
+      <x> 0.000 </x>
+      <y> 1.000 </y>
+      <z> 0.000 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>paloGD</object-name>
+    <property>/controls/flight/rudder</property>
+    <factor>-10</factor>
+    <center>
+      <x-m> -4.463 </x-m>
+      <y-m> -0.439 </y-m>
+      <z-m> -0.834 </z-m>
+    </center>
+    <axis>
+      <x> 0.000 </x>
+      <y> 1.000 </y>
+      <z> 0.000 </z>
+    </axis>
+  </animation>
+
+  <!-- Manches -->
+  <!-- Pilote -->
+  <animation>
+    <type>rotate</type>
+    <object-name>mancheD</object-name>
+    <property>/controls/flight/elevator</property>
+    <factor>-10</factor>
+    <center>
+      <x-m> -4.318 </x-m>
+      <y-m>  0.388 </y-m>
+      <z-m> -0.804 </z-m>
+    </center>
+    <axis>
+      <x> 0.000 </x>
+      <y> 1.000 </y>
+      <z> 0.000 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>mancheD</object-name>
+    <property>/controls/flight/aileron</property>
+    <factor>-10</factor>
+    <center>
+      <x-m> -4.318 </x-m>
+      <y-m>  0.388 </y-m>
+      <z-m> -0.804 </z-m>
+    </center>
+    <axis>
+      <x> 1.000 </x>
+      <y> 0.000 </y>
+      <z> 0.000 </z>
+    </axis>
+  </animation>
+
+  <!-- Copilote -->
+  <animation>
+    <type>rotate</type>
+    <object-name>mancheG</object-name>
+    <property>/controls/flight/elevator</property>
+    <factor>-10</factor>
+    <center>
+      <x-m> -4.318 </x-m>
+      <y-m> -0.388 </y-m>
+      <z-m> -0.804 </z-m>
+    </center>
+    <axis>
+      <x> 0.000 </x>
+      <y> 1.000 </y>
+      <z> 0.000 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>mancheG</object-name>
+    <property>/controls/flight/aileron</property>
+    <factor>-10</factor>
+    <center>
+      <x-m> -4.318 </x-m>
+      <y-m> -0.388 </y-m>
+      <z-m> -0.804 </z-m>
+    </center>
+    <axis>
+      <x> 1.000 </x>
+      <y> 0.000 </y>
+      <z> 0.000 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
+

@@ -19,7 +19,7 @@
 
   <!-- Première rangée de gauche à droite -->
   <model>
-    <path>Aircraft/Alouette-II/Models/Panel/Instruments/alt/alt.xml</path>
+    <path>Aircraft/Alouette-II/Models/Interior/Panel/Instruments/alt/alt.xml</path>
     <offsets>
       <x-m> -0.222 </x-m>
       <y-m> -0.181 </y-m>
@@ -28,7 +28,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Alouette-II/Models/Panel/Instruments/vsi/vsi.xml</path>
+    <path>Aircraft/Alouette-II/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
     <offsets>
       <x-m> -0.208 </x-m>
       <y-m> -0.060 </y-m>
@@ -37,7 +37,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Alouette-II/Models/Panel/Instruments/ai/ai.xml</path>
+    <path>Aircraft/Alouette-II/Models/Interior/Panel/Instruments/ai/ai.xml</path>
     <offsets>
       <x-m> -0.231 </x-m>
       <y-m>  0.060 </y-m>
@@ -47,7 +47,7 @@
 
   <model>
     <name>ASI_KNOTS</name>
-    <path>Aircraft/Alouette-II/Models/Panel/Instruments/asi/asi.xml</path>
+    <path>Aircraft/Alouette-II/Models/Interior/Panel/Instruments/asi/asi.xml</path>
     <offsets>
       <x-m> -0.207 </x-m>
       <y-m>  0.181 </y-m>
@@ -57,7 +57,7 @@
 
   <model>
     <name>ASI_KMH</name>
-    <path>Aircraft/Alouette-II/Models/Panel/Instruments/asi-metric/asi-metric.xml</path>
+    <path>Aircraft/Alouette-II/Models/Interior/Panel/Instruments/asi-metric/asi-metric.xml</path>
     <offsets>
       <x-m> -0.207 </x-m>
       <y-m>  0.181 </y-m>
@@ -89,7 +89,7 @@
 
   <!-- Seconde rangée de gauche à droite -->
   <model>
-    <path>Aircraft/Alouette-II/Models/Panel/Instruments/vor/vor.xml</path>
+    <path>Aircraft/Alouette-II/Models/Interior/Panel/Instruments/vor/vor.xml</path>
     <offsets>
       <x-m> -0.223 </x-m>
       <y-m> -0.181 </y-m>
@@ -98,7 +98,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Alouette-II/Models/Panel/Instruments/hi/hi.xml</path>
+    <path>Aircraft/Alouette-II/Models/Interior/Panel/Instruments/hi/hi.xml</path>
     <offsets>
       <x-m> -0.221 </x-m>
       <y-m> -0.060 </y-m>
@@ -107,7 +107,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Alouette-II/Models/Panel/Instruments/torque/torque.xml</path>
+    <path>Aircraft/Alouette-II/Models/Interior/Panel/Instruments/torque/torque.xml</path>
     <offsets>
       <x-m> -0.223 </x-m>
       <y-m>  0.181 </y-m>
@@ -117,7 +117,7 @@
 
   <!-- Panneau central bas -->
   <model>
-    <path>Aircraft/Alouette-II/Models/Panel/Instruments/KT76A/KT76A.xml</path>
+    <path>Aircraft/Alouette-II/Models/Interior/Panel/Instruments/KT76A/KT76A.xml</path>
     <offsets>
       <x-m> -0.012 </x-m>
       <y-m>  0.000 </y-m>
