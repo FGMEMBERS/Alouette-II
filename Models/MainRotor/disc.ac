@@ -7,7 +7,7 @@ OBJECT poly
 name "propdisc1"
 data 9
 propdisc1
-texture "prop.rgb"
+texture "prop.png"
 texrep 1 1
 crease 30.000000
 numvert 12
@@ -77,7 +77,7 @@ OBJECT poly
 name "propdisc2"
 data 9
 propdisc2
-texture "prop.rgb"
+texture "prop.png"
 texrep 1 1
 crease 30.000000
 numvert 20
@@ -163,7 +163,7 @@ OBJECT poly
 name "propdisc3"
 data 9
 propdisc3
-texture "prop.rgb"
+texture "prop.png"
 texrep 1 1
 crease 30.000000
 numvert 20
@@ -249,7 +249,7 @@ OBJECT poly
 name "propdisc4"
 data 9
 propdisc4
-texture "prop.rgb"
+texture "prop.png"
 texrep 1 1
 crease 30.000000
 numvert 15

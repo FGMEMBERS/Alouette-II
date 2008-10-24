@@ -7,7 +7,7 @@ OBJECT poly
 name "propblur1"
 data 9
 propblur1
-texture "prop.rgb"
+texture "prop.png"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -49,7 +49,7 @@ OBJECT poly
 name "propblur2"
 data 9
 propblur2
-texture "prop.rgb"
+texture "prop.png"
 texrep 1 1
 crease 30.000000
 numvert 12
@@ -99,7 +99,7 @@ OBJECT poly
 name "propblur3"
 data 9
 propblur3
-texture "prop.rgb"
+texture "prop.png"
 texrep 1 1
 crease 30.000000
 numvert 12
@@ -149,7 +149,7 @@ OBJECT poly
 name "propblur4"
 data 9
 propblur4
-texture "prop.rgb"
+texture "prop.png"
 texrep 1 1
 crease 30.000000
 numvert 9

@@ -1,10 +1,10 @@
 AC3Db
 MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
-MATERIAL "Noneai_face.rgb.004" rgb 0.8 0.8 0.8 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
-MATERIAL "Noneai_face.rgb.003" rgb 0.8 0.8 0.8 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
-MATERIAL "Noneai_face.rgb.001" rgb 0.8 0.8 0.8 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
-MATERIAL "Noneai_face.rgb.002" rgb 0.8 0.8 0.8 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
-MATERIAL "Noneai_face.rgb" rgb 0.8 0.8 0.8 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+MATERIAL "Noneai_face.png.004" rgb 0.8 0.8 0.8 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+MATERIAL "Noneai_face.png.003" rgb 0.8 0.8 0.8 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+MATERIAL "Noneai_face.png.001" rgb 0.8 0.8 0.8 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+MATERIAL "Noneai_face.png.002" rgb 0.8 0.8 0.8 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+MATERIAL "Noneai_face.png" rgb 0.8 0.8 0.8 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
 MATERIAL "DefaultWhite.005" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 64 trans 0
 MATERIAL "DefaultWhite.010" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 64 trans 0
 MATERIAL "DefaultWhite.008" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 64 trans 0
@@ -14,7 +14,7 @@ OBJECT poly
 name "panel1"
 data 6
 panel1
-texture "fond.rgb"
+texture "fond.png"
 texrep 1 1
 crease 30.000000
 numvert 286
@@ -1505,7 +1505,7 @@ OBJECT poly
 name "panel2"
 data 6
 panel2
-texture "fond.rgb"
+texture "fond.png"
 texrep 1 1
 crease 30.000000
 numvert 40
@@ -1806,7 +1806,7 @@ OBJECT poly
 name "panel3"
 data 10
 panel3.002
-texture "fond.rgb"
+texture "fond.png"
 texrep 1 1
 crease 30.000000
 numvert 12
@@ -1877,7 +1877,7 @@ OBJECT poly
 name "panel4"
 data 10
 panel4.002
-texture "fond.rgb"
+texture "fond.png"
 texrep 1 1
 crease 30.000000
 numvert 8
@@ -1930,7 +1930,7 @@ OBJECT poly
 name "panel5"
 data 6
 panel5
-texture "fond.rgb"
+texture "fond.png"
 texrep 1 1
 crease 30.000000
 numvert 14
@@ -2015,7 +2015,7 @@ OBJECT poly
 name "panel5.001"
 data 10
 panel5.001
-texture "fond.rgb"
+texture "fond.png"
 texrep 1 1
 crease 30.000000
 numvert 14
@@ -2153,7 +2153,7 @@ OBJECT poly
 name "sur1"
 data 4
 sur1
-texture "fond.rgb"
+texture "fond.png"
 texrep 1 1
 crease 30.000000
 numvert 802
@@ -8369,7 +8369,7 @@ OBJECT poly
 name "sur2"
 data 4
 sur2
-texture "fond.rgb"
+texture "fond.png"
 texrep 1 1
 crease 30.000000
 numvert 802
@@ -14585,7 +14585,7 @@ OBJECT poly
 name "sur3"
 data 4
 sur3
-texture "fond.rgb"
+texture "fond.png"
 texrep 1 1
 crease 30.000000
 numvert 802
@@ -20801,7 +20801,7 @@ OBJECT poly
 name "sur4"
 data 4
 sur4
-texture "fond.rgb"
+texture "fond.png"
 texrep 1 1
 crease 30.000000
 numvert 802
@@ -27017,7 +27017,7 @@ OBJECT poly
 name "sur5"
 data 4
 sur5
-texture "fond.rgb"
+texture "fond.png"
 texrep 1 1
 crease 30.000000
 numvert 802

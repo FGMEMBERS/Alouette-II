@@ -1,8 +1,8 @@
 AC3Db
 MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
-MATERIAL "Noneai_face.rgb.001" rgb 0.8 0.8 0.8 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+MATERIAL "Noneai_face.png.001" rgb 0.8 0.8 0.8 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
 MATERIAL "illum" rgb 0.9 0.9 0.9 amb 0 0 0 emis 0 0 0 spec 0.5 0.5 0.5 shi 32 trans 0
-MATERIAL "Nonevisse.rgb.001" rgb 0.8 0.8 0.8 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+MATERIAL "Nonevisse.png.001" rgb 0.8 0.8 0.8 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
 MATERIAL "transparent" rgb 0.547091 0.565624 0.595981 amb 0 0 0 emis 0 0 0 spec 1 1 1 shi 64 trans 0.5
 OBJECT world
 kids 15
@@ -10,7 +10,7 @@ OBJECT poly
 name "Fond"
 data 4
 Fond
-texture "vor.rgb"
+texture "vor.png"
 texrep 1 1
 crease 30.000000
 numvert 194
@@ -1334,7 +1334,7 @@ OBJECT poly
 name "KI206.face"
 data 8
 Mesh.003
-texture "vor.rgb"
+texture "vor.png"
 texrep 1 1
 crease 45.000000
 numvert 18
@@ -1411,7 +1411,7 @@ OBJECT poly
 name "KI206.fromflag"
 data 8
 Mesh.002
-texture "vor.rgb"
+texture "vor.png"
 texrep 1 1
 crease 30.000000
 numvert 3
@@ -1430,7 +1430,7 @@ OBJECT poly
 name "KI206.gsflag"
 data 8
 Mesh.006
-texture "vor.rgb"
+texture "vor.png"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -1451,7 +1451,7 @@ OBJECT poly
 name "KI206.gsneedle"
 data 8
 Mesh.001
-texture "vor.rgb"
+texture "vor.png"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -1472,7 +1472,7 @@ OBJECT poly
 name "KI206.knob"
 data 8
 Mesh.008
-texture "vor.rgb"
+texture "vor.png"
 texrep 1 1
 crease 45.000000
 numvert 24
@@ -1625,7 +1625,7 @@ OBJECT poly
 name "KI206.locneedle"
 data 8
 Mesh.007
-texture "vor.rgb"
+texture "vor.png"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -1646,7 +1646,7 @@ OBJECT poly
 name "KI206.navflag"
 data 4
 Mesh
-texture "vor.rgb"
+texture "vor.png"
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -1667,7 +1667,7 @@ OBJECT poly
 name "KI206.toflag"
 data 8
 Mesh.009
-texture "vor.rgb"
+texture "vor.png"
 texrep 1 1
 crease 30.000000
 numvert 3
@@ -1686,7 +1686,7 @@ OBJECT poly
 name "KI206card"
 data 8
 Mesh.005
-texture "vor.rgb"
+texture "vor.png"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -1840,7 +1840,7 @@ OBJECT poly
 name "visse1"
 data 6
 visse1
-texture "vor.rgb"
+texture "vor.png"
 texrep 1 1
 crease 30.000000
 numvert 184
@@ -4026,7 +4026,7 @@ OBJECT poly
 name "visse2"
 data 6
 visse2
-texture "vor.rgb"
+texture "vor.png"
 texrep 1 1
 crease 30.000000
 numvert 184
@@ -6212,7 +6212,7 @@ OBJECT poly
 name "visse3"
 data 6
 visse3
-texture "vor.rgb"
+texture "vor.png"
 texrep 1 1
 crease 30.000000
 numvert 184
@@ -8398,7 +8398,7 @@ OBJECT poly
 name "visse4"
 data 6
 visse4
-texture "vor.rgb"
+texture "vor.png"
 texrep 1 1
 crease 30.000000
 numvert 184
@@ -10584,7 +10584,6 @@ OBJECT poly
 name "vitre"
 data 5
 vitre
-texture "glass.rgb"
 texrep 1 1
 crease 30.000000
 numvert 290

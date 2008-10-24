@@ -11,7 +11,7 @@ OBJECT poly
 name "interieur"
 data 9
 interieur
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 154
@@ -7419,7 +7419,7 @@ OBJECT poly
 name "paloDD"
 data 6
 paloDD
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 296
@@ -9258,7 +9258,7 @@ OBJECT poly
 name "paloDG"
 data 6
 paloDG
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 296
@@ -11097,7 +11097,7 @@ OBJECT poly
 name "paloGD"
 data 6
 paloGD
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 296
@@ -12936,7 +12936,7 @@ OBJECT poly
 name "paloGG"
 data 6
 paloGG
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 296
@@ -14775,7 +14775,7 @@ OBJECT poly
 name "sieges"
 data 6
 sieges
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 700
@@ -20385,7 +20385,7 @@ OBJECT poly
 name "souflets"
 data 8
 souflets
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 924

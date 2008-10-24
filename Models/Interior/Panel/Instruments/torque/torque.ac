@@ -1,8 +1,8 @@
 AC3Db
 MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
-MATERIAL "Noneai_face.rgb.001" rgb 0.8 0.8 0.8 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+MATERIAL "Noneai_face.png.001" rgb 0.8 0.8 0.8 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
 MATERIAL "material" rgb 1 1 1 amb 1 1 1 emis 0.15 0.15 0.15 spec 0.5 0.5 0.5 shi 64 trans 0
-MATERIAL "Nonevisse.rgb.001" rgb 0.8 0.8 0.8 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+MATERIAL "Nonevisse.png.001" rgb 0.8 0.8 0.8 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
 MATERIAL "transparent" rgb 0.547091 0.565624 0.595981 amb 0 0 0 emis 0 0 0 spec 1 1 1 shi 64 trans 0.5
 OBJECT world
 kids 9
@@ -10,7 +10,7 @@ OBJECT poly
 name "Face"
 data 4
 Face
-texture "torque.rgb"
+texture "torque.png"
 texrep 1 1
 crease 30.000000
 numvert 33
@@ -245,7 +245,7 @@ OBJECT poly
 name "Fond"
 data 8
 Fond.001
-texture "torque.rgb"
+texture "torque.png"
 texrep 1 1
 crease 30.000000
 numvert 194
@@ -1621,7 +1621,7 @@ OBJECT poly
 name "visse1"
 data 10
 visse1.001
-texture "torque.rgb"
+texture "torque.png"
 texrep 1 1
 crease 30.000000
 numvert 184
@@ -3807,7 +3807,7 @@ OBJECT poly
 name "visse2"
 data 10
 visse2.001
-texture "torque.rgb"
+texture "torque.png"
 texrep 1 1
 crease 30.000000
 numvert 184
@@ -5993,7 +5993,7 @@ OBJECT poly
 name "visse3"
 data 10
 visse3.001
-texture "torque.rgb"
+texture "torque.png"
 texrep 1 1
 crease 30.000000
 numvert 184
@@ -8179,7 +8179,7 @@ OBJECT poly
 name "visse4"
 data 10
 visse4.001
-texture "torque.rgb"
+texture "torque.png"
 texrep 1 1
 crease 30.000000
 numvert 184
@@ -10365,7 +10365,6 @@ OBJECT poly
 name "vitre"
 data 5
 vitre
-texture "glass.rgb"
 texrep 1 1
 crease 30.000000
 numvert 290

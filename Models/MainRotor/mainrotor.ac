@@ -7,7 +7,7 @@ OBJECT poly
 name "axes"
 data 4
 axes
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 96
@@ -449,7 +449,7 @@ OBJECT poly
 name "axeup1"
 data 6
 axeup1
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -603,7 +603,7 @@ OBJECT poly
 name "axeup2"
 data 6
 axeup2
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -757,7 +757,7 @@ OBJECT poly
 name "axeup3"
 data 6
 axeup3
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -911,7 +911,7 @@ OBJECT poly
 name "rotor"
 data 5
 rotor
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 640
@@ -5817,7 +5817,7 @@ OBJECT poly
 name "rotorcenter"
 data 11
 rotorcenter
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 320
@@ -8163,7 +8163,7 @@ OBJECT poly
 name "rotordown"
 data 9
 rotordown
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 18
@@ -8323,7 +8323,7 @@ OBJECT poly
 name "rotorup"
 data 7
 rotorup
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 160
@@ -9389,7 +9389,7 @@ OBJECT poly
 name "rotorup1"
 data 8
 rotorup1
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 62
@@ -10016,7 +10016,7 @@ OBJECT poly
 name "rotorup2"
 data 8
 rotorup2
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 18

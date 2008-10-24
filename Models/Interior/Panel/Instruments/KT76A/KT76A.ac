@@ -6,7 +6,7 @@ MATERIAL "RedLight" rgb 0.502093 0 0 amb 0.5 0.5 0.5 emis 0 0 0 spec 0.186866 0.
 MATERIAL "DarkBluePlastic" rgb 0.215686 0.282353 0.313726 amb 0.5 0.5 0.5 emis 0 0 0 spec 0.186866 0.186866 0.186866 shi 32 trans 0
 MATERIAL "BlackPlastic" rgb 0.153331 0.153331 0.153331 amb 0.5 0.5 0.5 emis 0 0 0 spec 0.186866 0.186866 0.186866 shi 32 trans 0
 MATERIAL "WhitePaint" rgb 1 1 1 amb 0.5 0.5 0.5 emis 0 0 0 spec 0 0 0 shi 32 trans 0
-MATERIAL "Nonevisse.rgb.001" rgb 0.8 0.8 0.8 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+MATERIAL "Nonevisse.png.001" rgb 0.8 0.8 0.8 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
 OBJECT world
 kids 27
 OBJECT poly
@@ -165,7 +165,7 @@ OBJECT poly
 name "Cube"
 data 4
 Cube
-texture "KT76A.rgb"
+texture "KT76A.png"
 texrep 1 1
 crease 30.000000
 numvert 20
@@ -276,10 +276,9 @@ refs 4
 12 0.981011927128 0.69528657198
 kids 0
 OBJECT poly
-name "Cube.002"
+name "vitre"
 data 8
-Cube.008
-texture "glass.rgb"
+vitre
 texrep 1 1
 crease 30.000000
 numvert 4
@@ -421,7 +420,7 @@ OBJECT poly
 name "Dial1"
 data 8
 Cube.004
-texture "KT76A.rgb"
+texture "KT76A.png"
 texrep 1 1
 crease 30.000000
 numvert 24
@@ -559,7 +558,7 @@ OBJECT poly
 name "Dial10"
 data 8
 Cube.003
-texture "KT76A.rgb"
+texture "KT76A.png"
 texrep 1 1
 crease 30.000000
 numvert 24
@@ -697,7 +696,7 @@ OBJECT poly
 name "Dial100"
 data 8
 Cube.002
-texture "KT76A.rgb"
+texture "KT76A.png"
 texrep 1 1
 crease 30.000000
 numvert 24
@@ -835,7 +834,7 @@ OBJECT poly
 name "Dial1000"
 data 8
 Cube.005
-texture "KT76A.rgb"
+texture "KT76A.png"
 texrep 1 1
 crease 30.000000
 numvert 24
@@ -1222,7 +1221,7 @@ OBJECT poly
 name "Knob1"
 data 10
 Circle.004
-texture "KT76A.rgb"
+texture "KT76A.png"
 texrep 1 1
 crease 30.000000
 numvert 129
@@ -2193,7 +2192,7 @@ OBJECT poly
 name "Knob10"
 data 10
 Circle.001
-texture "KT76A.rgb"
+texture "KT76A.png"
 texrep 1 1
 crease 30.000000
 numvert 129
@@ -3164,7 +3163,7 @@ OBJECT poly
 name "Knob100"
 data 6
 Circle
-texture "KT76A.rgb"
+texture "KT76A.png"
 texrep 1 1
 crease 30.000000
 numvert 129
@@ -4135,7 +4134,7 @@ OBJECT poly
 name "Knob1000"
 data 10
 Circle.006
-texture "KT76A.rgb"
+texture "KT76A.png"
 texrep 1 1
 crease 30.000000
 numvert 129
@@ -5614,7 +5613,7 @@ OBJECT poly
 name "KnobMode"
 data 10
 Circle.010
-texture "KT76A.rgb"
+texture "KT76A.png"
 texrep 1 1
 crease 30.000000
 numvert 129
@@ -6623,7 +6622,7 @@ OBJECT poly
 name "visse4.005"
 data 10
 visse4.005
-texture "KT76A.rgb"
+texture "KT76A.png"
 texrep 1 1
 crease 30.000000
 numvert 184
@@ -8809,7 +8808,7 @@ OBJECT poly
 name "visse4.006"
 data 10
 visse4.006
-texture "KT76A.rgb"
+texture "KT76A.png"
 texrep 1 1
 crease 30.000000
 numvert 184

@@ -1,7 +1,7 @@
 AC3Db
 MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
-MATERIAL "Noneai_face.rgb" rgb 0.8 0.8 0.8 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
-MATERIAL "Nonevisse.rgb" rgb 0.8 0.8 0.8 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+MATERIAL "Noneai_face.png" rgb 0.8 0.8 0.8 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
+MATERIAL "Nonevisse.png" rgb 0.8 0.8 0.8 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 32 trans 0
 MATERIAL "transparent.001" rgb 0.547091 0.565624 0.595981 amb 0 0 0 emis 0 0 0 spec 1 1 1 shi 64 trans 0.5
 OBJECT world
 kids 12
@@ -9,7 +9,7 @@ OBJECT poly
 name "Background"
 data 10
 Background
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 33
@@ -244,7 +244,7 @@ OBJECT poly
 name "Face"
 data 4
 Face
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 125
@@ -981,7 +981,7 @@ OBJECT poly
 name "Float"
 data 5
 Float
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 68
@@ -1409,7 +1409,7 @@ OBJECT poly
 name "Fond"
 data 4
 Fond
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 166
@@ -2536,7 +2536,7 @@ OBJECT poly
 name "Markings"
 data 8
 Markings
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 116
@@ -3265,7 +3265,7 @@ OBJECT poly
 name "Scale"
 data 5
 scale
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 128
@@ -3851,7 +3851,7 @@ OBJECT poly
 name "bouton"
 data 6
 bouton
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 129
@@ -4854,7 +4854,7 @@ OBJECT poly
 name "visse1"
 data 6
 visse1
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 184
@@ -7040,7 +7040,7 @@ OBJECT poly
 name "visse2"
 data 6
 visse2
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 184
@@ -9226,7 +9226,7 @@ OBJECT poly
 name "visse3"
 data 6
 visse3
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 184
@@ -11412,7 +11412,7 @@ OBJECT poly
 name "visse4"
 data 6
 visse4
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 184
@@ -13595,10 +13595,9 @@ refs 3
 181 0.176466584206 0.35541254282
 kids 0
 OBJECT poly
-name "vitre.001"
+name "vitre"
 data 4
 Mesh
-texture "glass.rgb"
 texrep 1 1
 crease 30.000000
 numvert 211

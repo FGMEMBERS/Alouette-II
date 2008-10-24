@@ -31,6 +31,15 @@
   </animation>
 
   <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>glass.png</texture>
+    <object-name>verriere</object-name>
+    <object-name>vitreporteG</object-name>
+    <object-name>vitreporteD</object-name>
+  </animation>
+
+  <animation>
     <type>noshadow</type>
     <object-name>verriere</object-name>
     <object-name>vitreporteG</object-name>
