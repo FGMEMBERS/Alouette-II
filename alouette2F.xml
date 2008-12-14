@@ -70,7 +70,7 @@
 <!-- only the engine power below is a known good value -->
 
 <rotorgear max-power-engine="265" max-power-rotor-brake="18" rotorgear-friction="3.7" engine-prop-factor="0.05" engine-accel-limit="4"
-		   yasimdragfactor="17" yasimliftfactor="320">
+		   yasimdragfactor="95" yasimliftfactor="320">
   <control-input axis="/controls/engines/engine[0]/magnetos" control="ROTORGEARENGINEON"/>
   <control-input axis="/controls/rotor/brake" control="ROTORBRAKE" src0="0.0" src1="1.0" dst0="0.0" dst1="1.0"/>
   <control-input axis="/controls/rotor/reltarget" control="ROTORRELTARGET"
@@ -89,12 +89,14 @@
         <!-- Fuse -->
         <fuselage ax="4.8" ay="0" az="-0.6" 
                   bx="0.5" by="0" bz="-0.6"
+                  cx="1.7" cy="1.7" cz="1.7" 
 		  width="1.6"   
 		  taper="0.8" 
 		  midpoint="0.35"/>
         <!-- Tail -->
 	<fuselage ax="0.5" ay="0" az="-0.6"
 	          bx="-3.9" by="0" bz="0.16"
+              cz="0.3" 
 		  width="0.5"   
 		  taper="0.2" 
 		  midpoint="0"/>
@@ -102,10 +104,11 @@
 
 	<hstab x="-2.85" y="0.16" z="-0.06" 
                taper="1.0" 
-               effectiveness="0.5" 
+               effectiveness="0.10" 
                length="0.7" 
                chord="0.30" 
-               sweep="0">
+               sweep="0"
+               incidence="20">
 	       <stall aoa="0" width="0" peak="1.5"/>
 	</hstab>
 <!-- engine -->
@@ -245,5 +248,8 @@
 <!-- tail skid -->
 <gear x="-4.06" y="+0.00" z="-0.96" skid="1" compression="0.01" spring="0.1" sfric="1" dfric="1"/>
 
+	<tank x="2.08" y="0.0" z="-.5" capacity="800"/><!-- 580l -->
+	<!-- work around bug in native-fdm.cxx:184 ???-->
+	<tank x="0" y="0" z="0" capacity="0"/>
 
 </airplane>
