@@ -170,7 +170,7 @@
       <file>Aircraft/Alouette-II/Nasal/bladevisible.nas</file>
       <file>Aircraft/Alouette-II/Nasal/fcs-management.nas</file>
 
-      <file>Aircraft/Generic/fcs.nas</file>
+      <file>Aircraft/Generic/helicopter-fcs.nas</file>
     </alouette>
   </nasal>
 
