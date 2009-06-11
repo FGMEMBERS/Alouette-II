@@ -1,9 +1,10 @@
-<?xml version="1.0"?>
-<!--
-************************************************************************
-Alouettte 2 simulation config.
+<?xml version="1.0" encoding="UTF-8"?>
 
-************************************************************************
+<!--
+  ************************************************************************
+  Alouettte 2 simulation config.
+
+  ************************************************************************
 -->
 
 <PropertyList>
@@ -19,6 +20,20 @@ Alouettte 2 simulation config.
     <sound>
       <path>Aircraft/Alouette-II/Sounds/alouette-sound.xml</path>
     </sound>
+
+    <model>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+      <alouette>
+        <state type="int">0</state>
+        <engine type="float">0.0</engine>
+        <rotor-step-deg type="float">-1.0</rotor-step-deg>
+        <is_inside_view type="int">1</is_inside_view>
+        <is_outside_view type="int">0</is_outside_view>
+        <asi_mod type="bool">false</asi_mod>
+      </alouette>
+    </model>
 
     <weight n="0">
       <name>Pilot</name>
@@ -67,6 +82,34 @@ Alouettte 2 simulation config.
         <name>D</name>
         <desc>Left windows</desc>
       </key>
+      <key>
+        <name>{</name>
+        <desc>Start engines</desc>
+      </key>
+      <key>
+        <name>}</name>
+        <desc>Shutdown engines</desc>
+      </key>
+      <key>
+        <name>R</name>
+        <desc>Toggle rotor brake</desc>
+      </key>
+      <key>
+        <name>r</name>
+        <desc>Apply rotor brake</desc>
+      </key>
+      <key>
+        <name>Ctrl d</name>
+        <desc>Toggle S.A.S.</desc>
+      </key>
+      <key>
+        <name>Ctrl e</name>
+        <desc>Toggle C.A.S.</desc>
+      </key>
+      <key>
+        <name>Ctrl f</name>
+        <desc>Auto hover</desc>
+      </key>
     </help>
 
     <menubar include="Dialogs/alouette-menu.xml"/>
@@ -99,16 +142,6 @@ Alouettte 2 simulation config.
     <keyboard include="Nasal/alouette-keyboard.xml"/>
   </input>
 
-  <nasal>
-    <alouette>
-      <file>Aircraft/Alouette-II/Nasal/doors.nas</file>
-      <file>Aircraft/Alouette-II/Nasal/alouette.nas</file>
-      <file>Aircraft/Alouette-II/Nasal/dialog.nas</file>
-      <file>Aircraft/Alouette-II/Nasal/light.nas</file>
-      <file>Aircraft/Alouette-II/Nasal/liveries.nas</file>
-    </alouette>
-  </nasal>
-
   <rotors>
     <main>
       <rpm type="double">0</rpm>
@@ -126,6 +159,20 @@ Alouettte 2 simulation config.
       <rpm type="double">500</rpm>
     </engine>
   </engines>
+
+  <nasal>
+    <alouette>
+      <file>Aircraft/Alouette-II/Nasal/doors.nas</file>
+      <file>Aircraft/Alouette-II/Nasal/alouette.nas</file>
+      <file>Aircraft/Alouette-II/Nasal/dialog.nas</file>
+      <file>Aircraft/Alouette-II/Nasal/light.nas</file>
+      <file>Aircraft/Alouette-II/Nasal/liveries.nas</file>
+      <file>Aircraft/Alouette-II/Nasal/bladevisible.nas</file>
+      <file>Aircraft/Alouette-II/Nasal/fcs-management.nas</file>
+
+      <file>Aircraft/Generic/fcs.nas</file>
+    </alouette>
+  </nasal>
 
 </PropertyList>
 

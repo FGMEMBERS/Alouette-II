@@ -43,6 +43,7 @@
       <y-offset-m archive="y">  0.014 </y-offset-m> <!--up-->
       <z-offset-m archive="y"> -3.735 </z-offset-m> <!--back-->
       <pitch-offset-deg>-15</pitch-offset-deg>
+      <default-field-of-view-deg>70</default-field-of-view-deg>
     </config>
   </view>
 

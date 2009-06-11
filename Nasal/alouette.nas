@@ -14,50 +14,12 @@ var npow = func(v, w) { math.exp(math.ln(abs(v)) * w) * (v < 0 ? -1 : 1) }
 var clamp = func(v, min = 0, max = 1) { v < min ? min : v > max ? max : v }
 var normatan = func(x) { math.atan2(x, 1) * 2 / math.pi }
 
-
-
-
 # timers ============================================================
 var turbine_timer = aircraft.timer.new("/sim/time/hobbs/turbines", 10);
 aircraft.timer.new("/sim/time/hobbs/helicopter", nil).start();
 
-# strobes ===========================================================
-var strobe_switch = props.globals.getNode("controls/lighting/strobe", 1);
-aircraft.light.new("sim/model/alouette/lighting/strobe-top", [0.05, 1.00], strobe_switch);
-aircraft.light.new("sim/model/alouette/lighting/strobe-bottom", [0.05, 1.03], strobe_switch);
-
-# beacons ===========================================================
-var beacon_switch = props.globals.getNode("controls/lighting/beacon", 1);
-aircraft.light.new("sim/model/alouette/lighting/beacon-top", [0.62, 0.62], beacon_switch);
-aircraft.light.new("sim/model/alouette/lighting/beacon-bottom", [0.63, 0.63], beacon_switch);
-
-
-# nav lights ========================================================
-var nav_light_switch = props.globals.getNode("controls/lighting/nav-lights", 1);
-var visibility = props.globals.getNode("environment/visibility-m", 1);
-var sun_angle = props.globals.getNode("sim/time/sun-angle-rad", 1);
-var nav_lights = props.globals.getNode("sim/model/alouette/lighting/nav-lights", 1);
-
-var nav_light_loop = func {
-	if (nav_light_switch.getValue()) {
-		nav_lights.setValue(visibility.getValue() < 5000 or sun_angle.getValue() > 1.4);
-	} else {
-		nav_lights.setValue(0);
-	}
-	settimer(nav_light_loop, 3);
-}
-
-settimer(nav_light_loop, 0);
-
-
-
-
-
-
 # engines/rotor =====================================================
 var state = props.globals.getNode("sim/model/alouette/state");
-var is_inside_view = props.globals.getNode("sim/model/alouette/is_inside_view");
-var is_outside_view = props.globals.getNode("sim/model/alouette/is_outside_view");
 var engine = props.globals.getNode("sim/model/alouette/engine");
 var rotor = props.globals.getNode("controls/engines/engine/magnetos");
 var rotor_rpm = props.globals.getNode("rotors/main/rpm");
@@ -77,6 +39,8 @@ var cone1 = props.globals.getNode("rotors/main/cone1-deg", 1);
 var cone2 = props.globals.getNode("rotors/main/cone2-deg", 1);
 var cone3 = props.globals.getNode("rotors/main/cone3-deg", 1);
 var cone4 = props.globals.getNode("rotors/main/cone4-deg", 1);
+var is_inside_view = props.globals.getNode("sim/model/alouette/is_inside_view");
+var is_outside_view = props.globals.getNode("sim/model/alouette/is_outside_view");
 
 # state:
 # 0 off
@@ -155,13 +119,13 @@ var update_engine = func {
 
 var update_rotor_cone_angle = func {
 	r = rotor_rpm.getValue();
-	var f = 1 - r / 100;
-	f = clamp (f, 0.1 , 1);
+	var f = r / 186;
+	f = clamp (f, 0 , 1);
 	c = cone.getValue();
-	cone1.setDoubleValue( f *c *0.40 + (1-f) * c );
-	cone2.setDoubleValue( f *c *0.35);
-	cone3.setDoubleValue( f *c *0.3);
-	cone4.setDoubleValue( f *c *0.25);
+	cone1.setDoubleValue( (c * 1.00) + (f * c));
+	cone2.setDoubleValue( (c * 0.10) + (f * c));
+	cone3.setDoubleValue( (c * 0.15) + (f * c));
+	cone4.setDoubleValue( (c * 0.20) + (f * c));
 }
 
 # torquemeter
@@ -173,9 +137,6 @@ var update_torque = func(dt) {
 	torque_val = torque.getValue() * f + torque_val * (1 - f);
 	torque_pct.setDoubleValue(torque_val / 5300);
 }
-
-
-
 
 # sound =============================================================
 
@@ -205,9 +166,6 @@ var update_stall_and_torque_sound = func(dt) {
 	var f = 0.3;
 	torque_sound_filtered2.setDoubleValue(f*t*r+(1-f)*(stall_val + 0.006 * (1 - c)));
 }
-
-
-
 
 # skid slide sound
 var Skid = {
@@ -258,8 +216,6 @@ var update_slide = func {
 	}
 }
 
-
-
 # crash handler =====================================================
 #var load = nil;
 var crash = func {
@@ -275,9 +231,6 @@ var crash = func {
 		setprop("rotors/main/blade[2]/incidence-deg", -50);
 		setprop("rotors/main/blade[3]/incidence-deg", -55);
 		setprop("rotors/tail/rpm", 0);
-		strobe_switch.setValue(0);
-		beacon_switch.setValue(0);
-		nav_light_switch.setValue(0);
 		rotor.setValue(0);
 		torque_pct.setValue(torque_val = 0);
 		stall_filtered.setValue(stall_val = 0);
@@ -291,14 +244,10 @@ var crash = func {
 			setprop("rotors/main/blade[" ~ i ~ "]/flap-deg", 0);
 			setprop("rotors/main/blade[" ~ i ~ "]/incidence-deg", 0);
 		}
-		strobe_switch.setValue(1);
-		beacon_switch.setValue(1);
 		rotor.setValue(1);
 		state.setValue(5);
 	}
 }
-
-
 
 
 # "manual" rotor animation for flight data recorder replay ============
@@ -326,15 +275,6 @@ var init_rotoranim = func {
 		settimer(rotoranim_loop, 0.1);
 	}
 }
-
-
-
-
-
-
-
-
-
 
 # view management ===================================================
 
@@ -373,7 +313,6 @@ controls.flapsDown = func(v) {
 	}
 }
 
-
 # register function that may set me.heading_offset, me.pitch_offset, me.roll_offset,
 # me.x_offset, me.y_offset, me.z_offset, and me.fov_offset
 #
@@ -392,9 +331,6 @@ dynamic_view.register(func {
 		-15 * r * lowspeed;					#    roll
 });
 
-
-
-
 # main() ============================================================
 var delta_time = props.globals.getNode("/sim/time/delta-realtime-sec", 1);
 var adf_rotation = props.globals.getNode("/instrumentation/adf/rotation-deg", 1);
@@ -411,7 +347,6 @@ var main_loop = func {
 	update_rotor_cone_angle();
 	settimer(main_loop, 0);
 }
-
 
 var crashed = 0;
 var variant = nil;

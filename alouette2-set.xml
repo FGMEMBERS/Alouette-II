@@ -1,9 +1,10 @@
-<?xml version="1.0"?>
-<!--
-************************************************************************
-Alouettte 2 simulation config.
+<?xml version="1.0" encoding="UTF-8"?>
 
-************************************************************************
+<!--
+  ************************************************************************
+  Alouettte 2 simulation config.
+
+  ************************************************************************
 -->
 
 <PropertyList include="alouette2-base.xml">
@@ -20,14 +21,6 @@ Alouettte 2 simulation config.
 
     <model>
       <path archive="y">Aircraft/Alouette-II/Models/alouette.xml</path>
-      <alouette>
-        <state type="int">0</state>
-        <engine type="float">0.0</engine>
-        <rotor-step-deg type="float">-1.0</rotor-step-deg>
-        <is_inside_view type="int">1</is_inside_view>
-        <is_outside_view type="int">0</is_outside_view>
-        <asi_mod type="bool">false</asi_mod>
-      </alouette>
     </model>
 
   </sim>

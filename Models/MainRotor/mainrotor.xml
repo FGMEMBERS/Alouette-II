@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -25,35 +25,9 @@
       <x-m> 0.000 </x-m>
       <y-m> 0.000 </y-m>
       <z-m> 0.826 </z-m>
-      <roll-deg>     0.000 </roll-deg>
-      <pitch-deg>    0.000 </pitch-deg>
-      <heading-deg>  0.000 </heading-deg>
-    </offsets>
-  </model>
-
-  <model>
-    <name>Blur1</name>
-    <path>Aircraft/Alouette-II/Models/MainRotor/blur.xml</path>
-    <offsets>
-      <x-m> 0.000 </x-m>
-      <y-m> 0.000 </y-m>
-      <z-m> 0.826 </z-m>
-      <roll-deg>     0.000 </roll-deg>
-      <pitch-deg>    0.000 </pitch-deg>
-      <heading-deg>  0.000 </heading-deg>
-    </offsets>
-  </model>
-
-  <model>
-    <name>Disc1</name>
-    <path>Aircraft/Alouette-II/Models/MainRotor/disc.xml</path>
-    <offsets>
-      <x-m> 0.000 </x-m>
-      <y-m> 0.000 </y-m>
-      <z-m> 0.826 </z-m>
-      <roll-deg>     0.000 </roll-deg>
-      <pitch-deg>    0.000 </pitch-deg>
-      <heading-deg>  0.000 </heading-deg>
+      <roll-deg>     0 </roll-deg>
+      <pitch-deg>    0 </pitch-deg>
+      <heading-deg>  0 </heading-deg>
     </offsets>
   </model>
 
@@ -64,35 +38,9 @@
       <x-m> 0.000 </x-m>
       <y-m> 0.000 </y-m>
       <z-m> 0.826 </z-m>
-      <roll-deg>      0.000 </roll-deg>
-      <pitch-deg>     0.000 </pitch-deg>
-      <heading-deg> 120.000 </heading-deg>
-    </offsets>
-  </model>
-
-  <model>
-    <name>Blur2</name>
-    <path>Aircraft/Alouette-II/Models/MainRotor/blur.xml</path>
-    <offsets>
-      <x-m> 0.000 </x-m>
-      <y-m> 0.000 </y-m>
-      <z-m> 0.826 </z-m>
-      <roll-deg>      0.000 </roll-deg>
-      <pitch-deg>     0.000 </pitch-deg>
-      <heading-deg> 120.000 </heading-deg>
-    </offsets>
-  </model>
-
-  <model>
-    <name>Disc2</name>
-    <path>Aircraft/Alouette-II/Models/MainRotor/disc.xml</path>
-    <offsets>
-      <x-m> 0.000 </x-m>
-      <y-m> 0.000 </y-m>
-      <z-m> 0.826 </z-m>
-      <roll-deg>      0.000 </roll-deg>
-      <pitch-deg>     0.000 </pitch-deg>
-      <heading-deg> 120.000 </heading-deg>
+      <roll-deg>      0 </roll-deg>
+      <pitch-deg>     0 </pitch-deg>
+      <heading-deg> 120 </heading-deg>
     </offsets>
   </model>
 
@@ -103,61 +51,15 @@
       <x-m> 0.000 </x-m>
       <y-m> 0.000 </y-m>
       <z-m> 0.826 </z-m>
-      <roll-deg>       0.000 </roll-deg>
-      <pitch-deg>      0.000 </pitch-deg>
-      <heading-deg> 240.000 </heading-deg>
-    </offsets>
-  </model>
-
-  <model>
-    <name>Blur3</name>
-    <path>Aircraft/Alouette-II/Models/MainRotor/blur.xml</path>
-    <offsets>
-      <x-m> 0.000 </x-m>
-      <y-m> 0.000 </y-m>
-      <z-m> 0.826 </z-m>
-      <roll-deg>      0.000 </roll-deg>
-      <pitch-deg>     0.000 </pitch-deg>
-      <heading-deg> 240.000 </heading-deg>
-    </offsets>
-  </model>
-
-  <model>
-    <name>Disc3</name>
-    <path>Aircraft/Alouette-II/Models/MainRotor/disc.xml</path>
-    <offsets>
-      <x-m> 0.000 </x-m>
-      <y-m> 0.000 </y-m>
-      <z-m> 0.826 </z-m>
-      <roll-deg>      0.000 </roll-deg>
-      <pitch-deg>     0.000 </pitch-deg>
-      <heading-deg> 240.000 </heading-deg>
+      <roll-deg>      0 </roll-deg>
+      <pitch-deg>     0 </pitch-deg>
+      <heading-deg> 240 </heading-deg>
     </offsets>
   </model>
 
   <!-- Rotation du rotor -->
   <animation>
-    <name>rotorcomplet</name>
-    <object-name>rotorup</object-name>
-    <object-name>rotorup1</object-name>
-    <object-name>rotorup2</object-name>
-    <object-name>axeup1</object-name>
-    <object-name>axeup2</object-name>
-    <object-name>axeup3</object-name>
-    <object-name>Blade1</object-name>
-    <object-name>Blade2</object-name>
-    <object-name>Blade3</object-name>
-    <object-name>Blur1</object-name>
-    <object-name>Blur2</object-name>
-    <object-name>Blur3</object-name>
-    <object-name>Disc1</object-name>
-    <object-name>Disc2</object-name>
-    <object-name>Disc3</object-name>
-    <object-name>rotordown</object-name>
-  </animation>
-
-  <animation>
-    <name>rotorsimple</name>
+    <name>RotorComplet</name>
     <object-name>rotorup</object-name>
     <object-name>rotorup1</object-name>
     <object-name>rotorup2</object-name>
@@ -175,99 +77,20 @@
     <object-name>Disc3</object-name>
   </animation>
 
-  <!-- Sélection des parties visibles en fonction de la vitesse de rotation -->
-  <!-- Sélection blade/blur/disc main rotor-->
-  <animation>
-    <type>select</type>
-    <object-name>Disc1</object-name>
-    <object-name>Disc2</object-name>
-    <object-name>Disc3</object-name>
-    <condition>
-      <greater-than>
-        <property>rotors/main/rpm</property>
-        <value>150</value>
-      </greater-than>
-    </condition>
-  </animation>
-
-  <animation>
-    <type>select</type>
-    <object-name>Blur1</object-name>
-    <object-name>Blur2</object-name>
-    <object-name>Blur3</object-name>
-    <condition>
-      <and>
-        <greater-than>
-          <property>rotors/main/rpm</property>
-          <value>60</value>
-        </greater-than>
-        <less-than>
-          <property>rotors/main/rpm</property>
-          <value>150.001</value>
-        </less-than>
-      </and>
-    </condition>
-  </animation>
-
-  <animation>
-    <type>select</type>
-    <object-name>Blade1</object-name>
-    <object-name>Blade2</object-name>
-    <object-name>Blade3</object-name>
-    <condition>
-      <less-than>
-        <property>rotors/main/rpm</property>
-	<value>150</value>
-      </less-than>
-    </condition>
-  </animation>
-
   <animation>
     <type>rotate</type>
-    <object-name>rotorcomplet</object-name>
-    <property>rotors/main/roll-deg</property>
-    <center>
-       <x-m> 0.000 </x-m>
-       <y-m> 0.000 </y-m>
-       <z-m> 0.579 </z-m>
-    </center>
-    <axis>
-      <x> 1.000 </x>
-      <y> 0.000 </y>
-      <z> 0.000 </z>
-    </axis>
-  </animation>
-
-  <animation>
-    <type>rotate</type>
-    <object-name>rotorcomplet</object-name>
-    <property>rotors/main/yaw-deg</property>
-    <center>
-       <x-m> 0.000 </x-m>
-       <y-m> 0.000 </y-m>
-       <z-m> 0.579 </z-m>
-    </center>
-    <axis>
-      <x> 0.000 </x>
-      <y>-1.000 </y>
-      <z> 0.000 </z>
-    </axis>
-  </animation>
-
-  <animation>
-    <type>rotate</type>
-    <object-name>rotorsimple</object-name>
+    <object-name>RotorComplet</object-name>
     <property>rotors/main/blade[0]/position-deg</property>
     <factor>-1</factor>
     <center>
-       <x-m> 0.000 </x-m>
-       <y-m> 0.000 </y-m>
-       <z-m> 0.000 </z-m>
+       <x-m> 0 </x-m>
+       <y-m> 0 </y-m>
+       <z-m> 0 </z-m>
     </center>
     <axis>
-      <x>  0.000 </x>
-      <y>  0.000 </y>
-      <z>  1.000 </z>
+      <x>  0 </x>
+      <y>  0 </y>
+      <z>  1 </z>
     </axis>
   </animation>
 

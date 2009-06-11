@@ -1,8 +1,21 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
   <path>ai.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>visses</object-name>
+    <object-name>bouton</object-name>
+    <object-name>scale</object-name>
+    <object-name>face</object-name>
+    <object-name>background</object-name>
+    <object-name>markings</object-name>
+    <object-name>float</object-name>
+
+    <object-name>vitre</object-name>
+  </animation>
 
   <animation>
     <type>noshadow</type>
@@ -17,10 +30,25 @@
   </animation>
 
   <animation>
+    <type>material</type>
+    <object-name>scale</object-name>
+    <object-name>face</object-name>
+    <object-name>background</object-name>
+    <object-name>markings</object-name>
+    <object-name>float</object-name>
+    <emission>
+      <red>   0.6 </red>
+      <green> 0.3 </green>
+      <blue>  0.3 </blue>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
+    </emission> 
+  </animation>    
+
+  <animation>
     <type>rotate</type>
-    <object-name>Background</object-name>
-    <object-name>Scale</object-name>
-    <object-name>Float</object-name>
+    <object-name>background</object-name>
+    <object-name>scale</object-name>
+    <object-name>float</object-name>
     <property>/orientation/roll-deg</property>
     <factor>1.0</factor>
     <axis>
@@ -30,7 +58,7 @@
 
   <animation>
     <type>translate</type>
-    <object-name>Float</object-name>
+    <object-name>float</object-name>
     <property>/orientation/pitch-deg</property>
     <factor>-0.0002</factor>
     <min-m>-0.1</min-m>
