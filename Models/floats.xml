@@ -50,15 +50,5 @@
 -->
   </animation>
 
-  <!-- Effet de particules du rotor au sol -->
-  <model>
-    <path>Aircraft/Alouette-II/Models/Wakes/particles.xml</path>
-    <offsets>
-      <x-m> -2.664 </x-m>
-      <y-m>  0.000 </y-m>
-      <z-m> -1.951 </z-m>
-   </offsets>
-  </model>
-
 </PropertyList>
 

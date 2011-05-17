@@ -7,9 +7,23 @@
   <nasal>
     <load>
       var livery_update = aircraft.livery_update.new("Aircraft/Alouette-II/Models/Liveries", 10);
+
+      var self = cmdarg();
+
+      var float_0 = self.getNode("sim/multiplay/generic/float[0]", 1);
+      var float_1 = self.getNode("sim/multiplay/generic/float[1]", 1);
+      
+      var crew_door = self.getNode("instrumentation/doors/crew/position-norm", 1);
+      var passenger_door = self.getNode("instrumentation/doors/passenger/position-norm", 1);
+    
+      crew_door.alias(float_0);
+      passenger_door.alias(float_1);
     </load>
+
     <unload>
       livery_update.stop();
+      crew_door.unalias();
+      passenger_door.unalias();
     </unload>
   </nasal>
 
@@ -18,29 +32,14 @@
     <object-name>tourvitre</object-name>
     <object-name>structure</object-name>
     <object-name>reservoir</object-name>
-    <object-name>moteur</object-name>
     <object-name>ailerons</object-name>
     <object-name>cache</object-name>
     <object-name>porteG</object-name>
     <object-name>porteD</object-name>
 
+    <object-name>moteur</object-name>
+
     <!-- Transparence -->
-    <object-name>verriere</object-name>
-    <object-name>vitreporteG</object-name>
-    <object-name>vitreporteD</object-name>
-  </animation>
-
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>glass.png</texture>
-    <object-name>verriere</object-name>
-    <object-name>vitreporteG</object-name>
-    <object-name>vitreporteD</object-name>
-  </animation>
-
-  <animation>
-    <type>noshadow</type>
     <object-name>verriere</object-name>
     <object-name>vitreporteG</object-name>
     <object-name>vitreporteD</object-name>
@@ -52,11 +51,12 @@
     <object-name>tourvitre</object-name>
     <object-name>structure</object-name>
     <object-name>reservoir</object-name>
-    <object-name>moteur</object-name>
     <object-name>ailerons</object-name>
     <object-name>cache</object-name>
     <object-name>porteG</object-name>
     <object-name>porteD</object-name>
+
+    <object-name>moteur</object-name>
 
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
@@ -91,6 +91,45 @@
     </shininess>
 -->
   </animation>
+
+  <effect>
+    <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
+    <object-name>fuselage</object-name>
+    <object-name>tourvitre</object-name>
+    <object-name>structure</object-name>
+    <object-name>reservoir</object-name>
+    <object-name>ailerons</object-name>
+    <object-name>cache</object-name>
+    <object-name>porteG</object-name>
+    <object-name>porteD</object-name>
+  </effect>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>verriere</object-name>
+    <object-name>vitreporteG</object-name>
+    <object-name>vitreporteD</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>verriere</object-name>
+    <object-name>vitreporteG</object-name>
+    <object-name>vitreporteD</object-name>
+  </animation>
+
+  <!-- Effet de particules du rotor au sol -->
+  <model>
+    <path>Aircraft/Alouette-II/Models/Wakes/particles.xml</path>
+    <offsets>
+      <x-m> -2.664 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -1.0100 </z-m>
+<!-- -1.951 -->
+   </offsets>
+  </model>
 
   <!-- Interieur -->
   <model>
