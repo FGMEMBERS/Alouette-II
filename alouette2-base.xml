@@ -11,7 +11,7 @@
 
   <sim include="Nasal/views.xml">
 
-    <author>BARANGER Emmanuel (3D), Reagan Thomas, Maik Justus (FDM)</author>
+    <author>BARANGER Emmanuel (3D), Reagan Thomas, Maik Justus/Jean Michel AUBERGER (FDM)</author>
     <status>alpha</status>
     <license>GPL v2</license>
 

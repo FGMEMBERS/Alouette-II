@@ -1,4 +1,4 @@
-English/FranÃ§ais
+English/Français
 
 [English]
 ----------
@@ -24,7 +24,7 @@ Some useful keys:
 
 Thanks
 ======
-Maik JUSTUS for FDM
+Maik JUSTUS and Jean Michel AUBERGER for FDM
 
 ===============
 BARANGER Emmanuel
@@ -34,7 +34,7 @@ http://helijah.free.fr/flightgear/hangar.htm
 embaranger@free.fr
 
 
-[FranÃ§ais]
+[Français]
 ----------
 
 Un peu d'histoire
@@ -43,15 +43,15 @@ Un peu d'histoire
 Alouette 2 SA 318C
 ==================
 
-Constructeur                  : Sud Aviation
-Type                          : HÃ©licoptÃ¨re
-AnnÃ©e                         : 
-Moteur                        : 1 turbomÃ©ca "Astazou" IIA 550 ch
-Envergure                     : 10.20 m
-Longueur                      :  9.75 m
-Hauteur                       :  2.75 m
-Poids estimÃ© au dÃ©collage     :  890 kg
-Vitesse estimÃ©e de croisiÃ¨re  :  170 km/h
+Constructeur                   : Sud Aviation
+Type                           : Hélicoptère
+Année                          : 
+Moteur                         : 1 turboméca "Astazou" IIA 550 ch
+Envergure                      : 10.20 m
+Longueur                       :  9.75 m
+Hauteur                        :  2.75 m
+Poids estimé au décollage      :  890 kg
+Vitesse estimée de croisière   :  170 km/h
 
 
 Quelques touches utiles :
@@ -59,7 +59,7 @@ Quelques touches utiles :
 
 Remerciements
 =============
-Maik JUSTUS pour le modÃ¨le de vol.
+Maik JUSTUS et Jean Michel AUBERGER pour le modèle de vol.
 
 ===============
 BARANGER Emmanuel
