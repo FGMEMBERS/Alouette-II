@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>mainrotor.ac</path>
+
+  <animation>
+    <object-name>rotorup</object-name>
+    <object-name>rotorup1</object-name>
+    <object-name>rotorup2</object-name>
+    <object-name>axeup1</object-name>
+    <object-name>axeup2</object-name>
+    <object-name>axeup3</object-name>
+    <object-name>rotordown</object-name>
+    <object-name>rotorcenter</object-name>
+    <object-name>rotor</object-name>
+    <object-name>axes</object-name>
+  </animation>
+
+  <!-- Blades -->
+  <model>
+    <name>Blade1</name>
+    <path>Aircraft/Alouette-II/Models/MainRotor/blade1.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.826 </z-m>
+      <roll-deg>     0 </roll-deg>
+      <pitch-deg>    0 </pitch-deg>
+      <heading-deg>  0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Blade2</name>
+    <path>Aircraft/Alouette-II/Models/MainRotor/blade2.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.826 </z-m>
+      <roll-deg>      0 </roll-deg>
+      <pitch-deg>     0 </pitch-deg>
+      <heading-deg> 120 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Blade3</name>
+    <path>Aircraft/Alouette-II/Models/MainRotor/blade3.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.826 </z-m>
+      <roll-deg>      0 </roll-deg>
+      <pitch-deg>     0 </pitch-deg>
+      <heading-deg> 240 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Rotation du rotor -->
+  <animation>
+    <name>RotorComplet</name>
+    <object-name>rotorup</object-name>
+    <object-name>rotorup1</object-name>
+    <object-name>rotorup2</object-name>
+    <object-name>axeup1</object-name>
+    <object-name>axeup2</object-name>
+    <object-name>axeup3</object-name>
+    <object-name>Blade1</object-name>
+    <object-name>Blade2</object-name>
+    <object-name>Blade3</object-name>
+    <object-name>Blur1</object-name>
+    <object-name>Blur2</object-name>
+    <object-name>Blur3</object-name>
+    <object-name>Disc1</object-name>
+    <object-name>Disc2</object-name>
+    <object-name>Disc3</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>RotorComplet</object-name>
+    <property>rotors/main/blade[0]/position-deg</property>
+    <factor>-1</factor>
+    <center>
+       <x-m> 0 </x-m>
+       <y-m> 0 </y-m>
+       <z-m> 0 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  0 </y>
+      <z>  1 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
+

@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>panel.ac</path>
+
+  <animation>
+    <object-name>panel1</object-name>
+    <object-name>panel2</object-name>
+    <object-name>panel3</object-name>
+    <object-name>panel4</object-name>
+    <object-name>panel5</object-name>
+    <object-name>sur1</object-name>
+    <object-name>sur2</object-name>
+    <object-name>sur3</object-name>
+    <object-name>sur4</object-name>
+    <object-name>sur5</object-name>
+  </animation>
+
+  <!-- Première rangée de gauche à droite -->
+  <model>
+    <path>Aircraft/Alouette-II/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m> -0.222 </x-m>
+      <y-m> -0.181 </y-m>
+      <z-m>  0.112 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Alouette-II/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m> -0.208 </x-m>
+      <y-m> -0.060 </y-m>
+      <z-m>  0.112 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Alouette-II/Models/Interior/Panel/Instruments/ai/ai.xml</path>
+    <offsets>
+      <x-m> -0.231 </x-m>
+      <y-m>  0.060 </y-m>
+      <z-m>  0.112 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>ASI_KNOTS</name>
+    <path>Aircraft/Alouette-II/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m> -0.207 </x-m>
+      <y-m>  0.181 </y-m>
+      <z-m>  0.112 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>ASI_KMH</name>
+    <path>Aircraft/Alouette-II/Models/Interior/Panel/Instruments/asi-metric/asi-metric.xml</path>
+    <offsets>
+      <x-m> -0.207 </x-m>
+      <y-m>  0.181 </y-m>
+      <z-m>  0.112 </z-m>
+    </offsets>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>ASI_KNOTS</object-name>
+    <condition>
+      <equals>
+        <property>sim/model/alouette/asi_mod</property>
+        <value>true</value>
+      </equals>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>ASI_KMH</object-name>
+    <condition>
+      <equals>
+        <property>sim/model/alouette/asi_mod</property>
+        <value>false</value>
+      </equals>
+    </condition>
+  </animation>
+
+  <!-- Seconde rangée de gauche à droite -->
+  <model>
+    <path>Aircraft/Alouette-II/Models/Interior/Panel/Instruments/vor/vor.xml</path>
+    <offsets>
+      <x-m> -0.223 </x-m>
+      <y-m> -0.181 </y-m>
+      <z-m> -0.014 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Alouette-II/Models/Interior/Panel/Instruments/hi/hi.xml</path>
+    <offsets>
+      <x-m> -0.221 </x-m>
+      <y-m> -0.060 </y-m>
+      <z-m> -0.014 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Alouette-II/Models/Interior/Panel/Instruments/torque/torque.xml</path>
+    <offsets>
+      <x-m> -0.223 </x-m>
+      <y-m>  0.181 </y-m>
+      <z-m> -0.014 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Panneau central bas -->
+  <model>
+    <path>Aircraft/Alouette-II/Models/Interior/Panel/Instruments/KT76A/KT76A.xml</path>
+    <offsets>
+      <x-m> -0.012 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.426 </z-m>
+      <roll-deg>    0.000 </roll-deg>
+      <pitch-deg> -46.000 </pitch-deg>
+      <heading-deg> 0.000 </heading-deg>
+    </offsets>
+  </model>
+
+</PropertyList>
