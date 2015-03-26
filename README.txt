@@ -25,7 +25,7 @@ Some useful keys:
 Thanks
 ======
 Maik JUSTUS and Jean Michel AUBERGER for FDM
-
+Christian Thiriot "Patten" changes its taste and texturing
 ===============
 BARANGER Emmanuel
 November, 29, 2007.
@@ -60,7 +60,7 @@ Quelques touches utiles :
 Remerciements
 =============
 Maik JUSTUS et Jean Michel AUBERGER pour le modèle de vol.
-
+Christian Thiriot "Patten" modifications et texturage à son goût.
 ===============
 BARANGER Emmanuel
 29 Novembre 2007.

@@ -9,16 +9,16 @@
 
 <PropertyList>
 
-  <sim include="Nasal/views.xml">
-
-    <author>BARANGER Emmanuel (3D), Reagan Thomas, Maik Justus/Jean Michel AUBERGER (FDM)</author>
+  <!--sim include="Aircraft/Alouette-2/views.xml"-->
+      <sim include="views.xml">
+    <author>BARANGER Emmanuel (3D), Reagan Thomas, Maik Justus/Jean Michel AUBERGER (FDM) Christian Thiriot "Patten" (news 3D, news textures, ...)</author>
     <status>alpha</status>
     <license>GPL v2</license>
 
     <fuel-fraction>0.8</fuel-fraction>
 
     <sound>
-      <path>Aircraft/Alouette-II/Sounds/alouette-sound.xml</path>
+      <path>Aircraft/Alouette-2/Sounds/alouette-sound.xml</path>
     </sound>
 
     <model>
@@ -120,7 +120,7 @@
       </key>
       <key>
         <name>Ctrl e</name>
-        <desc>Toggle C.A.S.</desc>
+        <desc>Toggle C.A.S. (disengage for hovering)</desc>
       </key>
       <key>
         <name>Ctrl f</name>
@@ -138,12 +138,16 @@
         <magnetos>0</magnetos>
       </engine>
     </engines>
+    <electric>
+        <battery-switch type="bool">0</battery-switch>
+    </electric>
     <gear>
       <brake-parking>1</brake-parking>
     </gear>
     <rotor>
       <reltarget>1</reltarget>
       <maxreltorque>1</maxreltorque>
+      <brake type="bool">0</brake>
     </rotor>
   </controls>
 
@@ -155,7 +159,8 @@
   </instrumentation>
 
   <input>
-    <keyboard include="Nasal/alouette-keyboard.xml"/>
+    <!--keyboard include="Aircraft/Alouette-2/alouette-keyboard.xml"/> -->
+    <keyboard include="alouette-keyboard.xml"/>
   </input>
 
   <rotors>
@@ -178,19 +183,26 @@
 
   <nasal>
     <doors>
-      <file>Aircraft/Alouette-II/Nasal/doors.nas</file>
+      <file>Aircraft/Alouette-2/Nasal/doors.nas</file>
     </doors>
     <alouette>
-      <file>Aircraft/Alouette-II/Nasal/alouette.nas</file>
-      <file>Aircraft/Alouette-II/Nasal/dialog.nas</file>
-      <file>Aircraft/Alouette-II/Nasal/light.nas</file>
-      <file>Aircraft/Alouette-II/Nasal/liveries.nas</file>
-      <file>Aircraft/Alouette-II/Nasal/bladevisible.nas</file>
-      <file>Aircraft/Alouette-II/Nasal/fcs-management.nas</file>
+      <file>Aircraft/Alouette-2/Nasal/alouette.nas</file>     
+      <file>Aircraft/Alouette-2/Nasal/light.nas</file>
+      <file>Aircraft/Alouette-2/Nasal/liveries.nas</file>
+      <file>Aircraft/Alouette-2/Nasal/bladevisible.nas</file>
+      <file>Aircraft/Alouette-2/Nasal/fcs-management.nas</file>
 
       <file>Aircraft/Generic/helicopter-fcs.nas</file>
     </alouette>
   </nasal>
+<!--
+    <garmin196>
+      <texture-file>/Aircraft/Alouette-2/Models/Interior/Panel/Instruments/Garmin196/coque.png</texture-file>
+    </garmin196>
 
+    <garmin196>
+      <file>Aircraft/Instruments-3d/garmin196/garmin196.nas</file>
+    </garmin196>
+-->
 </PropertyList>
 

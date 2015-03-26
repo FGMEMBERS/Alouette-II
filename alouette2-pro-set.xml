@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  ************************************************************************
+  Alouettte 2 simulation config.
+
+  ************************************************************************
+-->
+
+<PropertyList include="alouette2-base.xml">
+
+  <sim>
+
+    <description>Alouette 2 pro (Yasim)</description>
+    <flight-model>yasim</flight-model>
+    <aero>alouette2-pro</aero>
+
+    <startup>
+      <splash-texture>Aircraft/Alouette-2/splash.jpg</splash-texture>
+    </startup> 
+
+    <model>
+      <path archive="y">Aircraft/Alouette-2/Models/alouette2.xml</path>
+    </model>
+
+  </sim>
+
+</PropertyList>
+

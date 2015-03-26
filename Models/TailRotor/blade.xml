@@ -18,6 +18,16 @@
     <object-name>propdisc</object-name>
   </animation>
 
+ <effect>
+   <inherits-from>Effects/model-transparent</inherits-from>
+     <object-name>propblur</object-name>
+     <object-name>propdisc</object-name>
+  <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+ </effect>
+
+
   <!-- Sélection blade/blur/disc tail rotor-->
   <animation>
     <type>select</type>

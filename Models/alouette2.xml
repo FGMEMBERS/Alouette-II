@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>alouette2.ac</path>
+
+  <nasal>
+    <load>
+      var livery_update = aircraft.livery_update.new("Aircraft/Alouette-2/Models/Liveries", 10);
+
+      var self = cmdarg();
+
+      var float_0 = self.getNode("sim/multiplay/generic/float[0]", 1);
+      var float_1 = self.getNode("sim/multiplay/generic/float[1]", 1);
+      
+      var crew_door = self.getNode("instrumentation/doors/crew/position-norm", 1);
+      var passenger_door = self.getNode("instrumentation/doors/passenger/position-norm", 1);
+    
+      crew_door.alias(float_0);
+      passenger_door.alias(float_1);
+    </load>
+
+    <unload>
+      livery_update.stop();
+      crew_door.unalias();
+      passenger_door.unalias();
+    </unload>
+  </nasal>
+
+  <animation>
+    <object-name>fuselage</object-name>
+    <object-name>tourvitre</object-name>
+    <object-name>structure</object-name>
+    <object-name>reservoir</object-name>
+    <object-name>ailerons</object-name>
+    <object-name>cache</object-name>
+    <object-name>porteG</object-name>
+    <object-name>porteD</object-name>
+    <object-name>patins</object-name>
+    <object-name>support-verriere</object-name>
+    <object-name>support-patins</object-name>
+    <object-name>gyro</object-name>
+    <object-name>lampeD</object-name>
+    <object-name>lampeG</object-name>
+    <object-name>tourvitre</object-name>
+    <object-name>transmission</object-name>
+    <object-name>extincteur</object-name>
+    <!-- Transparence -->
+    <object-name>verriere</object-name>
+    <object-name>vitreporteG</object-name>
+    <object-name>vitreporteD</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>fuselage</object-name>
+    <object-name>tourvitre</object-name>
+    <object-name>structure</object-name>
+    <object-name>reservoir</object-name>
+    <object-name>ailerons</object-name>
+    <object-name>cache</object-name>
+    <object-name>porteG</object-name>
+    <object-name>porteD</object-name>
+    <object-name>patins</object-name>
+    <object-name>support-verriere</object-name>
+    <object-name>support-patins</object-name>    
+    <object-name>gyro</object-name>
+    <object-name>lampeD</object-name>
+    <object-name>lampeG</object-name>
+    <object-name>tourvitre</object-name>
+    <object-name>transmission</object-name>
+    
+
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>texture.png</texture>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>/Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>verriere</object-name>
+    <object-name>vitreporteG</object-name>
+    <object-name>vitreporteD</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>verriere</object-name>
+    <object-name>vitreporteG</object-name>
+    <object-name>vitreporteD</object-name>
+  </animation>
+
+<effect>
+ <inherits-from>Effects/model-transparent</inherits-from>
+ <object-name>verriere</object-name>
+ <object-name>vitreporteG</object-name>
+ <object-name>vitreporteD</object-name>
+<condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+</effect>
+
+  <!-- Effet de particules du rotor au sol -->
+  <model>
+    <path>Aircraft/Alouette-2/Models/Wakes/particles.xml</path>
+    <offsets>
+      <x-m> -2.664 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -1.510 </z-m>
+<!-- -1.951 -->
+   </offsets>
+  </model>
+
+  <!-- Interieur -->
+  <model>
+    <path>Aircraft/Alouette-2/Models/Interior/interior.xml</path>
+    <offsets>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> -0.2313 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Rotor principal -->
+  <model>
+    <path>Aircraft/Alouette-2/Models/MainRotor/mainrotor.xml</path>
+    <offsets>
+      <x-m> -2.142 </x-m>
+      <y-m>  0.014 </y-m>
+      <z-m>  -0.0543 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Rotor de queue -->
+  <model>
+    <path>Aircraft/Alouette-2/Models/TailRotor/tailrotor.xml</path>
+    <offsets>
+      <x-m>  3.963 </x-m>
+      <y-m>  0.226 </y-m>
+      <z-m>  -0.0058 </z-m>
+      <roll-deg>  -90 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Porte passager -->
+  <animation>
+    <type>rotate</type>
+    <object-name>porteG</object-name>
+    <object-name>vitreporteG</object-name>
+    <property>/instrumentation/doors/passenger/position-norm</property>
+    <factor> -175.0 </factor>
+    <center>
+      <x-m> -4.215 </x-m>
+      <y-m> -0.819 </y-m>
+      <z-m> -0.438 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <!-- Porte pilote -->
+  <animation>
+    <type>rotate</type>
+    <object-name>porteD</object-name>
+    <object-name>vitreporteD</object-name>
+    <property>/instrumentation/doors/crew/position-norm</property>
+    <factor> 175.0 </factor>
+    <center>
+      <x-m> -4.215 </x-m>
+      <y-m>  0.819 </y-m>
+      <z-m> -0.438 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <!-- Lights -->
+  <model>
+    <path>Aircraft/Alouette-2/Models/lights/beacon.xml</path>
+    <offsets>
+      <x-m> -3.8102 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.2581 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Alouette-2/Models/lights/RedLight.xml</path>
+    <offsets>
+      <x-m> -4.3960 </x-m>
+      <y-m> -0.7947 </y-m>
+      <z-m> -1.1452 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Alouette-2/Models/lights/GreenLight.xml</path>
+    <offsets>
+      <x-m> -4.3960 </x-m>
+      <y-m>  0.7947 </y-m>
+      <z-m> -1.1452 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Alouette-2/Models/lights/WhiteLight.xml</path>
+    <offsets>
+      <x-m>  4.0606 </x-m>
+      <y-m>  0.0012 </y-m>
+      <z-m> -0.1146 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>
+

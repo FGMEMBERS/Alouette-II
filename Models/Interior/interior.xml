@@ -7,7 +7,6 @@
   <animation>
     <!-- Objets opaques -->
     <object-name>interieur</object-name>
-    <object-name>sieges</object-name>
     <object-name>souflets</object-name>
     <object-name>mancheG</object-name>
     <object-name>mancheD</object-name>
@@ -15,7 +14,11 @@
     <object-name>paloGD</object-name>
     <object-name>paloDG</object-name>
     <object-name>paloDD</object-name>
-
+    <object-name>dossiers</object-name>
+    <object-name>assises</object-name>
+    <object-name>supports</object-name>
+    <object-name>pttD</object-name>
+    <object-name>pttG</object-name>
     <!-- Objets transparents -->
     <object-name>intverriere</object-name>
     <object-name>intvitreporteG</object-name>
@@ -40,7 +43,7 @@
 
   <!-- Tableau de bord -->
   <model>
-    <path>Aircraft/Alouette-II/Models/Interior/Panel/panel.xml</path>
+    <path>Aircraft/Alouette-2/Models/Interior/Panel/panel.xml</path>
     <offsets>
       <x-m> -4.136 </x-m>
       <y-m>  0.000 </y-m>
@@ -54,11 +57,11 @@
   <!-- Pilote -->
   <model>
     <name>Pilote</name>
-    <path>Aircraft/Alouette-II/Models/Pilot/pilot.xml</path>
+    <path>Aircraft/Alouette-2/Models/Pilot/pilot.xml</path>
     <offsets>
       <x-m> -3.937 </x-m>
       <y-m>  0.392 </y-m>
-      <z-m> -0.452 </z-m>
+      <z-m> -0.552 </z-m>
       <roll-deg>    0 </roll-deg>
       <pitch-deg>   0 </pitch-deg>
       <heading-deg> 0 </heading-deg>
@@ -206,6 +209,42 @@
       <z> 0 </z>
     </axis>
   </animation>
+       <!-- PTT -->
+  <animation>
+    <type>translate</type>
+    <object-name>pttG</object-name>
+    <property>/instrumentation/comm/ptt</property>
+    <factor> 0.0045 </factor>
+    <center>
+      <x-m> -4.12581 </x-m>
+      <y-m> -0.4008 </y-m>
+      <z-m> -0.21733 </z-m>
+    </center>
+    <axis>
+      <x> 0.0 </x>
+      <y> 0.0 </y>
+      <z>-1.0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>pttD</object-name>
+    <property>/instrumentation/comm/ptt</property>
+    <factor> 0.0045 </factor>
+    <center>
+      <x-m> -4.12581 </x-m>
+      <y-m>   0.3881 </y-m>
+      <z-m> -0.21733 </z-m>
+    </center>
+    <axis>
+      <x> 0.0 </x>
+      <y> 0.0 </y>
+      <z>-1.0 </z>
+    </axis>
+  </animation>
+
+
 
   <!-- Porte passager -->
   <animation>

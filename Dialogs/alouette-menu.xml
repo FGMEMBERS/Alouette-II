@@ -24,13 +24,6 @@
           </script>
         </binding>
       </item>
-      <item>
-        <label>ASI Modes</label>
-        <binding>
-          <command>nasal</command>
-          <script>alouette.asi_dialog.toggle()</script>
-        </binding>
-      </item>
     </menu>
   </default>
 

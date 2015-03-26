@@ -11,7 +11,7 @@
   <!-- Blades -->
   <model>
     <name>Blade1</name>
-    <path>Aircraft/Alouette-II/Models/TailRotor/blade.xml</path>
+    <path>Aircraft/Alouette-2/Models/TailRotor/blade.xml</path>
     <offsets>
       <x-m> 0.000 </x-m>
       <y-m> 0.000 </y-m>
@@ -24,7 +24,7 @@
 
   <model>
     <name>Blade2</name>
-    <path>Aircraft/Alouette-II/Models/TailRotor/blade.xml</path>
+    <path>Aircraft/Alouette-2/Models/TailRotor/blade.xml</path>
     <offsets>
       <x-m> 0.000 </x-m>
       <y-m> 0.000 </y-m>

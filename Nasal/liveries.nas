@@ -1,3 +1,3 @@
-aircraft.livery.init("Aircraft/Alouette-II/Models/Liveries");
+aircraft.livery.init("Aircraft/Alouette-2/Models/Liveries");
 
 
