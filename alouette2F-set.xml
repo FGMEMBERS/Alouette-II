@@ -14,10 +14,11 @@
     <description>Alouette II with floats (Yasim)</description>
     <flight-model>yasim</flight-model>
     <aero>alouette2F</aero>
+    <variant-of>alouette2</variant-of>
 
     <startup>
       <splash-texture>Aircraft/Alouette-II/Splash/alouette2F-splash.png</splash-texture>
-    </startup> 
+    </startup>
 
     <model>
       <path archive="y">Aircraft/Alouette-II/Models/alouetteF.xml</path>
@@ -26,4 +27,3 @@
   </sim>
 
 </PropertyList>
-
