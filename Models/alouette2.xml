@@ -6,7 +6,7 @@
 
   <nasal>
     <load>
-      var livery_update = aircraft.livery_update.new("Aircraft/Alouette-2/Models/Liveries", 10);
+      var livery_update = aircraft.livery_update.new("Aircraft/Alouette-II/Models/Liveries", 10);
 
       var self = cmdarg();
 
@@ -104,7 +104,7 @@
 
   <!-- Effet de particules du rotor au sol -->
   <model>
-    <path>Aircraft/Alouette-2/Models/Wakes/particles.xml</path>
+    <path>Aircraft/Alouette-II/Models/Wakes/particles.xml</path>
     <offsets>
       <x-m> -2.664 </x-m>
       <y-m>  0.000 </y-m>
@@ -115,7 +115,7 @@
 
   <!-- Interieur -->
   <model>
-    <path>Aircraft/Alouette-2/Models/Interior/interior.xml</path>
+    <path>Aircraft/Alouette-II/Models/Interior/interior.xml</path>
     <offsets>
       <x-m> 0 </x-m>
       <y-m> 0 </y-m>
@@ -128,7 +128,7 @@
 
   <!-- Rotor principal -->
   <model>
-    <path>Aircraft/Alouette-2/Models/MainRotor/mainrotor.xml</path>
+    <path>Aircraft/Alouette-II/Models/MainRotor/mainrotor.xml</path>
     <offsets>
       <x-m> -2.142 </x-m>
       <y-m>  0.014 </y-m>
@@ -141,7 +141,7 @@
 
   <!-- Rotor de queue -->
   <model>
-    <path>Aircraft/Alouette-2/Models/TailRotor/tailrotor.xml</path>
+    <path>Aircraft/Alouette-II/Models/TailRotor/tailrotor.xml</path>
     <offsets>
       <x-m>  3.963 </x-m>
       <y-m>  0.226 </y-m>
@@ -192,7 +192,7 @@
 
   <!-- Lights -->
   <model>
-    <path>Aircraft/Alouette-2/Models/lights/beacon.xml</path>
+    <path>Aircraft/Alouette-II/Models/lights/beacon.xml</path>
     <offsets>
       <x-m> -3.8102 </x-m>
       <y-m>  0.000 </y-m>
@@ -201,7 +201,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Alouette-2/Models/lights/RedLight.xml</path>
+    <path>Aircraft/Alouette-II/Models/lights/RedLight.xml</path>
     <offsets>
       <x-m> -4.3960 </x-m>
       <y-m> -0.7947 </y-m>
@@ -210,7 +210,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Alouette-2/Models/lights/GreenLight.xml</path>
+    <path>Aircraft/Alouette-II/Models/lights/GreenLight.xml</path>
     <offsets>
       <x-m> -4.3960 </x-m>
       <y-m>  0.7947 </y-m>
@@ -219,7 +219,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Alouette-2/Models/lights/WhiteLight.xml</path>
+    <path>Aircraft/Alouette-II/Models/lights/WhiteLight.xml</path>
     <offsets>
       <x-m>  4.0606 </x-m>
       <y-m>  0.0012 </y-m>

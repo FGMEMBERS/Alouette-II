@@ -40,7 +40,7 @@
 <animation>
     <type>shader</type>
     <shader>chrome</shader>
-    <texture>Aircraft/Alouette-2/Models/Effects/glass_shader.png</texture>
+    <texture>Aircraft/Alouette-II/Models/Effects/glass_shader.png</texture>
     <object-name>vitre</object-name>
   </animation>
 
@@ -53,7 +53,7 @@
 
   <!-- Première rangée de gauche à droite -->
   <model>
-    <path>Aircraft/Alouette-2/Models/Interior/Panel/Instruments/Alt/alt.xml</path>
+    <path>Aircraft/Alouette-II/Models/Interior/Panel/Instruments/Alt/alt.xml</path>
     <offsets>
       <x-m> -0.21962 </x-m>
       <y-m> -0.17669 </y-m>
@@ -62,7 +62,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Alouette-2/Models/Interior/Panel/Instruments/Vsi/vsi.xml</path>
+    <path>Aircraft/Alouette-II/Models/Interior/Panel/Instruments/Vsi/vsi.xml</path>
     <offsets>
       <x-m> -0.23296 </x-m>
       <y-m> -0.07478 </y-m>
@@ -71,7 +71,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Alouette-2/Models/Interior/Panel/Instruments/Ai/ai.xml</path>
+    <path>Aircraft/Alouette-II/Models/Interior/Panel/Instruments/Ai/ai.xml</path>
     <offsets>
       <x-m> -0.20880 </x-m>
       <y-m>  0.04405 </y-m>
@@ -80,7 +80,7 @@
   </model>
 
 <model>
-    <path>Aircraft/Alouette-2/Models/Interior/Panel/Instruments/Ai/contour_ai.xml</path>
+    <path>Aircraft/Alouette-II/Models/Interior/Panel/Instruments/Ai/contour_ai.xml</path>
     <offsets>
       <x-m> -0.23578 </x-m>
       <y-m>  0.04426 </y-m>
@@ -90,7 +90,7 @@
 
   <model>
     <name>ASI_KMH</name>
-    <path>Aircraft/Alouette-2/Models/Interior/Panel/Instruments/Asi-metric/asi-metric.xml</path>
+    <path>Aircraft/Alouette-II/Models/Interior/Panel/Instruments/Asi-metric/asi-metric.xml</path>
     <offsets>
       <x-m> -0.21937 </x-m>
       <y-m>  0.18616 </y-m>
@@ -111,7 +111,7 @@
 
   <!-- Seconde rangée de gauche à droite -->
   <model>
-    <path>Aircraft/Alouette-2/Models/Interior/Panel/Instruments/Vor/VOR.xml</path>
+    <path>Aircraft/Alouette-II/Models/Interior/Panel/Instruments/Vor/VOR.xml</path>
     <offsets>
       <x-m> -0.21726 </x-m>
       <y-m> -0.16870 </y-m>
@@ -120,7 +120,7 @@
   </model>
 
 <model>
-    <path>Aircraft/Alouette-2/Models/Interior/Panel/Instruments/Rotor/rotor.xml</path>
+    <path>Aircraft/Alouette-II/Models/Interior/Panel/Instruments/Rotor/rotor.xml</path>
     <offsets>
       <x-m> -0.21726 </x-m>
       <y-m> -0.07559 </y-m>
@@ -129,7 +129,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Alouette-2/Models/Interior/Panel/Instruments/Hdg/hdg.xml</path>
+    <path>Aircraft/Alouette-II/Models/Interior/Panel/Instruments/Hdg/hdg.xml</path>
     <offsets>
       <x-m> -0.21940 </x-m>
       <y-m>  0.04118 </y-m>
@@ -138,7 +138,7 @@
   </model>
 
   <model>
-    <path>Aircraft/Alouette-2/Models/Interior/Panel/Instruments/Torque/torque.xml</path>
+    <path>Aircraft/Alouette-II/Models/Interior/Panel/Instruments/Torque/torque.xml</path>
     <offsets>
       <x-m> -0.22127 </x-m>
       <y-m>  0.17388 </y-m>
@@ -149,7 +149,7 @@
 <!-- Mini panneau-->
 
 <model>
-    <path>Aircraft/Alouette-2/Models/Interior/Panel/Instruments/Bille/bille.xml</path>
+    <path>Aircraft/Alouette-II/Models/Interior/Panel/Instruments/Bille/bille.xml</path>
     <offsets>
       <x-m> -0.20995 </x-m>
       <y-m>  0.05955 </y-m>
@@ -159,7 +159,7 @@
 
   <!-- Panneau central bas -->
 <model>
-  <path>Aircraft/Alouette-2/Models/Interior/Panel/Instruments/GNS430/GNS430.xml</path>
+  <path>Aircraft/Alouette-II/Models/Interior/Panel/Instruments/GNS430/GNS430.xml</path>
     <offsets>
       <x-m> -0.0801</x-m>
       <y-m> -0.0000 </y-m>
@@ -172,7 +172,7 @@
 
   <!-- Magneto  -->
   <model>
-    <path>Aircraft/Alouette-2/Models/Interior/Panel/Instruments/Magneto/magneto.xml</path>
+    <path>Aircraft/Alouette-II/Models/Interior/Panel/Instruments/Magneto/magneto.xml</path>
     <offsets>
       <x-m> -0.13471 </x-m>
       <y-m>  0.00201 </y-m>
@@ -182,7 +182,7 @@
   </model>
   <!-- Batterie  -->
   <model>
-    <path>Aircraft/Alouette-2/Models/Interior/Panel/Instruments/Battery/battery-switch.xml</path>
+    <path>Aircraft/Alouette-II/Models/Interior/Panel/Instruments/Battery/battery-switch.xml</path>
     <offsets>
       <x-m> -0.15792 </x-m>
       <y-m> -0.00181 </y-m>
@@ -194,7 +194,7 @@
 
   <!-- Transpondeur -->
   <model>
-    <path>Aircraft/Alouette-2/Models/Interior/Panel/Instruments/KT76A/kt76a.xml</path>
+    <path>Aircraft/Alouette-II/Models/Interior/Panel/Instruments/KT76A/kt76a.xml</path>
     <offsets>
       <x-m> -0.012 </x-m>
       <y-m>  0.000 </y-m>
@@ -209,7 +209,7 @@
 
 <!-- Comm -->
   <model>
-    <path>Aircraft/Alouette-2/Models/Interior/Panel/Instruments/Radio/ctl22-com.xml</path>
+    <path>Aircraft/Alouette-II/Models/Interior/Panel/Instruments/Radio/ctl22-com.xml</path>
     <offsets>
       <x-m> 0.04464 </x-m>
       <y-m>  -0.04136 </y-m>
@@ -222,7 +222,7 @@
 
 <!-- Nav -->
   <model>
-    <path>Aircraft/Alouette-2/Models/Interior/Panel/Instruments/Radio/ctl32-nav.xml</path>
+    <path>Aircraft/Alouette-II/Models/Interior/Panel/Instruments/Radio/ctl32-nav.xml</path>
     <offsets>
       <x-m> 0.04464 </x-m>
       <y-m>  0.03624 </y-m>
@@ -235,7 +235,7 @@
 
 <!-- Panneau frein de rotor -->
   <model>
-    <path>Aircraft/Alouette-2/Models/Interior/Panel/Parts/Rotor-brake/rotor-brake.xml</path>
+    <path>Aircraft/Alouette-II/Models/Interior/Panel/Parts/Rotor-brake/rotor-brake.xml</path>
     <offsets>
       <x-m> -0.19370 </x-m>
       <y-m>  0.11601 </y-m>

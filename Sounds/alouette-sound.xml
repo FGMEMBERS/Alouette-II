@@ -6,7 +6,7 @@
     <engine>
       <name>engine-start-outside</name>
       <mode>once</mode>
-      <path>Aircraft/Alouette-2/Sounds/al2_turbine_strt_out.wav</path>
+      <path>Aircraft/Alouette-II/Sounds/al2_turbine_strt_out.wav</path>
       <condition>
         <greater-than>
           <property>sim/model/alouette/state</property>
@@ -24,7 +24,7 @@
     <engine>
       <name>engine-start-inside</name>
       <mode>once</mode>
-      <path>Aircraft/Alouette-2/Sounds/al2_turbine_start_.wav</path>
+      <path>Aircraft/Alouette-II/Sounds/al2_turbine_start_.wav</path>
       <condition>
         <greater-than>
           <property>sim/model/alouette/state</property>
@@ -43,7 +43,7 @@
     <rotor>
       <name>rotor</name>
       <mode>looped</mode>
-      <path>Aircraft/Alouette-2/Sounds/al2_outside6_loop.wav</path>
+      <path>Aircraft/Alouette-II/Sounds/al2_outside6_loop.wav</path>
       <condition>
         <and>
           <greater-than>
@@ -82,7 +82,7 @@
     <rotor>
       <name>tail_rotor</name>
       <mode>looped</mode>
-      <path>Aircraft/Alouette-2/Sounds/al2_tail_rotor_loop_outside.wav</path>
+      <path>Aircraft/Alouette-II/Sounds/al2_tail_rotor_loop_outside.wav</path>
       <condition>
         <and>
           <greater-than>
@@ -130,7 +130,7 @@
 		<rotor>
 			<name>engine</name>
 			<mode>looped</mode>
-			<path>Aircraft/Alouette-2/Sounds/al2_outside5_loop.wav</path>
+			<path>Aircraft/Alouette-II/Sounds/al2_outside5_loop.wav</path>
 			<condition>
 				<and>
 					<greater-than>
@@ -181,7 +181,7 @@
 		<rotor>
 			<name>rotorinside</name>
 			<mode>looped</mode>
-			<path>Aircraft/Alouette-2/Sounds/al2_inside_loop_a.wav</path>
+			<path>Aircraft/Alouette-II/Sounds/al2_inside_loop_a.wav</path>
 			<condition>
 				<and>
 					<greater-than>
@@ -210,7 +210,7 @@
 		<rotor>
 			<name>rotorinside2</name>
 			<mode>looped</mode>
-			<path>Aircraft/Alouette-2/Sounds/al2_inside_loop_b2.wav</path>
+			<path>Aircraft/Alouette-II/Sounds/al2_inside_loop_b2.wav</path>
 			<condition>
 				<and>
 					<greater-than>
@@ -242,7 +242,7 @@
 		<rotor>
 			<name>stall</name>
 			<mode>looped</mode>
-			<path>Aircraft/Alouette-2/Sounds/al2_outside_loop.wav</path>
+			<path>Aircraft/Alouette-II/Sounds/al2_outside_loop.wav</path>
 			<condition>
 				<and>
 					<greater-than>
@@ -278,7 +278,7 @@
 		<rotor>
 			<name>stall2</name>
 			<mode>looped</mode>
-			<path>Aircraft/Alouette-2/Sounds/al2_rotor_flap_loop_outside.wav</path>
+			<path>Aircraft/Alouette-II/Sounds/al2_rotor_flap_loop_outside.wav</path>
 			<condition>
 				<and>
 					<greater-than>
@@ -334,7 +334,7 @@
     <contact>
       <name>ground contact</name>
       <mode>once</mode>
-      <path>Aircraft/Alouette-2/Sounds/al2_TC1.wav</path>
+      <path>Aircraft/Alouette-II/Sounds/al2_TC1.wav</path>
       <condition>
         <property>gear/gear[0]/wow</property>
         <property>gear/gear[1]/wow</property>
@@ -396,7 +396,7 @@
 <door>
 			<name>close right frontdoor</name>
 			<mode>once</mode>
-			<path>Aircraft/Alouette-2/Sounds/al2-Door_close.wav</path>
+			<path>Aircraft/Alouette-II/Sounds/al2-Door_close.wav</path>
 				<condition>
 						<equals>
 							<property>instrumentation/doors/crew/position-norm</property>
@@ -418,7 +418,7 @@
 		<door>
 			<name>close left frontdoor</name>
 			<mode>once</mode>
-			<path>Aircraft/Alouette-2/Sounds/al2-Door_close.wav</path>
+			<path>Aircraft/Alouette-II/Sounds/al2-Door_close.wav</path>
 				<condition>
 						<equals>
 							<property>instrumentation/doors/passenger/position-norm</property>
@@ -438,7 +438,7 @@
 		</door>
              <click>
                   <name>Clickon</name>
-                    <path>Aircraft/Alouette-2/Sounds/al2_click.wav</path>
+                    <path>Aircraft/Alouette-II/Sounds/al2_click.wav</path>
                  <condition>
                     <property>sim/model/click</property>
                  </condition>
@@ -449,7 +449,7 @@
 
           <click>
                <name>Clickoff</name>
-                 <path>Aircraft/Alouette-2/Sounds/al2_click.wav</path>
+                 <path>Aircraft/Alouette-II/Sounds/al2_click.wav</path>
                <condition>
                  <not><property>sim/model/click</property></not>
               </condition>

@@ -43,7 +43,7 @@
 
   <!-- Tableau de bord -->
   <model>
-    <path>Aircraft/Alouette-2/Models/Interior/Panel/panel.xml</path>
+    <path>Aircraft/Alouette-II/Models/Interior/Panel/panel.xml</path>
     <offsets>
       <x-m> -4.136 </x-m>
       <y-m>  0.000 </y-m>
@@ -57,7 +57,7 @@
   <!-- Pilote -->
   <model>
     <name>Pilote</name>
-    <path>Aircraft/Alouette-2/Models/Pilot/pilot.xml</path>
+    <path>Aircraft/Alouette-II/Models/Pilot/pilot.xml</path>
     <offsets>
       <x-m> -3.937 </x-m>
       <y-m>  0.392 </y-m>

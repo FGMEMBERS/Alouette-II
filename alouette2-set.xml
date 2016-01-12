@@ -11,16 +11,16 @@
 
   <sim>
 
-    <description>Alouette 2(Yasim)</description>
+    <description>Alouette II(Yasim)</description>
     <flight-model>yasim</flight-model>
     <aero>alouette2</aero>
 
     <startup>
-      <splash-texture>Aircraft/Alouette-2/splash.jpg</splash-texture>
+      <splash-texture>Aircraft/Alouette-II/splash.jpg</splash-texture>
     </startup> 
 
     <model>
-      <path archive="y">Aircraft/Alouette-2/Models/alouette2.xml</path>
+      <path archive="y">Aircraft/Alouette-II/Models/alouette2.xml</path>
     </model>
 
   </sim>
