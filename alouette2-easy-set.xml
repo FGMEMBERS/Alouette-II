@@ -15,6 +15,17 @@
     <flight-model>yasim</flight-model>
     <aero>alouette2-easy</aero>
     <variant-of>alouette2</variant-of>
+ 
+    <tags>
+      <tag>helicopter</tag>
+      <tag>tricycle</tag>
+      <tag>retractable-gear</tag>
+      <tag>single-engine</tag>
+      <tag>turboprop</tag>
+      <tag>1950s</tag>
+      <tag>1960s</tag>
+      <tag>1970s</tag>
+    </tags>
     
     <startup>
       <splash-texture>Aircraft/Alouette-II/Splash/alouette2-splash.png</splash-texture>
